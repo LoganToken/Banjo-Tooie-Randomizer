@@ -52,12 +52,12 @@
 
 	"Intermediates": {
 		"Explosives": [["Grenade_Eggs"], ["Clockworks"]],
-		"Clockwork_Warp": [["Grenade_Eggs", "Egg_Aim", "Clockworks"]],
+		"Clockwork_Warp": [["Grenade_Eggs", "Egg_Aim", "Clockworks", "Glitches"]],
 		"MT_Flight": [["Bill_Drill"], ["MT_Mumbo"]],
 		"Relic": [["Egg_Aim", "Grip_Grab"], ["MT_Flight", "Clockwork_Warp"]],
-		"JSG": [["MT_Flight"], ["MT_Mumbo"]],
-		"Code_Chamber": [["JSG", "MT_Mumbo", "Egg_Aim"], ["JSG", "Explosives", "Egg_Aim"]],
-		"Prison_Compound": [["MT_Mumbo"], ["Explosives"]],
+		"JSG": [["MT_Flight", "Glitches"], ["MT_Mumbo"]],
+		"Code_Chamber": [["MT_Mumbo", "Egg_Aim"], ["JSG", "Explosives", "Egg_Aim"]],
+		"Prison_Compound": [["MT_Mumbo"], ["Explosives"], ["MT_Flight", "Glitches"]],
 		"Break_Rocks_In_GGM": [["Bill_Drill"], ["Detonator"]],
 		"Free_Canary_Mary": [["Detonator"], ["Clockworks"]],
 		"Pine_Grove": [["Fire_Eggs"]],
@@ -95,16 +95,16 @@
 	},
 
 	"Checks": {
-		"Bovina": [["Egg_Aim"], ["MT_Flight"]],
-		"Golden_Goliath": [["MT_Mumbo"]],
+		"Bovina": [["Egg_Aim"], ["MT_Flight"], ["Insane"]],
+		"Golden_Goliath": [["MT_Mumbo"], ["JSG", "Clockworks", "Glitches"]],
 		"Ssslumber": [["JSG"]],
 		"MT_Kickball": [["Stony"]],
-		"Relic_Thingy": [["Egg_Aim", "Grip_Grab"], ["Egg_Aim", "MT_Flight"]],
+		"Relic_Thingy": [["Egg_Aim", "Grip_Grab"], ["Egg_Aim", "MT_Flight"], ["MT_Flight", "Glitches"]],
 		"Top_Of_Temple": [[]],
 		"Slightly_Sacred_Chamber": [["Breegull_Blaster"]],
 		"Targitzan": [["Breegull_Blaster"]],
 		"Swamp": [["Prison_Compound", "Grip_Grab"], ["Prison_Compound", "SuperBanjo"]],
-		"Pillars": [["Prison_Compound"]],
+		"Pillars": [["Prison_Compound", "Bill_Drill"], ["Prison_Compound", "Clockworks", "Egg_Aim"], ["Prison_Compound", "Tricks"]],
 		"Dilberta": [["Prison_Compound", "Bill_Drill"]],
 		"Ordnance_Storage": [["Breegull_Blaster", "Beak_Bayonet", "Break_Rocks_In_GGM"]],
 		"Crushing_Shed": [["GGM_Mumbo"]],
@@ -230,7 +230,7 @@
 
 	"Jinjos": {
 		"Jinjo_MT_Jade_Snake_Grove": [["JSG"]],
-		"Jinjo_MT_Kickball": [["MT_Flight"]],
+		"Jinjo_MT_Kickball": [["MT_Flight"], ["Insane"]],
 		"Jinjo_MT_Temple": [["Breegull_Blaster"]],
 		"Jinjo_MT_Pool": [[]],
 		"Jinjo_MT_Bridge": [[]],
