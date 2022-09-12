@@ -156,7 +156,7 @@
 		"Quality_Control": [["Roof", "Clockwork_Warp"], ["Floor_4_Crushers", "Clockworks", "Egg_Aim"], ["Floor_4_Crushers", "Explosives", "Egg_Aim", "Leg_Spring", "Glide"], ["Floor_4_Crushers", "Explosives", "Egg_Aim", "Washing_Machine"]],
 		"Clinkers_Cavern": [["Floor_4_Crushers", "Breegull_Blaster", "Claw_Clambers"]],
 		"Attic": [["Roof", "Clockworks", "Egg_Aim"], ["Roof", "Split_Up"], ["Roof", "Insane"]],
-		"Workers_Jiggy": [["Roof", "Washing_Machine", "Bill_Drill", "Floor_2_Button"]],
+		"Workers_Jiggy": [["Roof", "Washing_Machine", "Bill_Drill", "Floor_2_Button"], ["Washing_Machine", "Floor_2_Button", "SuperBanjo"]],
 		"Toxic_Waste_Pool": [["Toxic_Waste", "Talon_Torpedo", "Glitches"], ["Grunty_Industries", "Weldar_Door", "Split_Up", "Shack_Pack"], ["Weldar_Door", "Split_Up", "Leg_Spring", "Glitches"]],
 		"Tintops": [["Inside_GI", "Claw_Clambers", "Egg_Aim", "Clockworks"], ["Floor_2", "Egg_Aim", "Clockworks"], ["Roof", "Split_Up"], ["Grunty_Industries", "Clockwork_Warp"]],
 		"Toxic_Waste_Box": [["Toxic_Waste", "Glitches"], ["Toxic_Waste", "Split_Up", "Sack_Pack"]],
