@@ -65,7 +65,7 @@
 		"Witchyworld": [["Pine_Grove", "JiggyWiggySpecial"], ["Pine_Grove", "8_Jiggies"], ["Witchyworld_Early"]],
 		"Inferno": [["Clockworks", "Glitches"], ["Van"]],
 		"Saucer_Button": [["Clockworks",  "Glitches"], ["Witchyworld", "Egg_Aim", "Explosives"], ["Witchyworld", "Insane"]],
-		"Cliff_Top": [["Split_Up"]],
+		"Cliff_Top": [["Split_Up"], ["Hailfire_Peaks_Early", "SuperBanjo"]],
 		"Jolly_Rogers_Lagoon_Early": [["Hailfire_Peaks", "Split_Up", "Cloud_Cuckooland"], ["Hailfire_Peaks_B", "Cloud_Cuckooland"], ["Hailfire_Peaks", "Grip_Grab", "Glitches"]],
 		"Jolly_Rogers_Lagoon": [["Cliff_Top", "JiggyWiggySpecial"], ["Cliff_Top", "14_Jiggies"], ["Jolly_Rogers_Lagoon_Early"]],
 		"Toxic_Waste_Pipe_Button": [["Jolly_Rogers_Lagoon", "Explosives"], ["Jolly_Rogers_Lagoon", "Bill_Drill"], ["Grunty_Industries", "Toxic_Waste", "Egg_Aim", "Clockworks"]],
@@ -88,7 +88,8 @@
 		"Floor_2_Button": [["Floor_2", "Split_Up", "Leg_Spring"], ["Floor_2", "Claw_Clambers"], ["Roof"]],
 		"Weldar_Door": [["Roof", "GI_Mumbo", "Washing_Machine", "Battery", "Grenade_Eggs", "Bill Drill"]],
 		"Hailfire_Peaks_B": ["Toxic_Waste", "Glitches"],
-		"Hailfire_Peaks": [["Cliff_Top", "JiggyWiggySpecial"], ["Cliff_Top", "36_Jiggies"], ["Ice_Wall_Room", "Clockwork_Warp", "Insane"], ["Hailfire_Peaks_B", "GGM_Mumbo"]],
+		"Hailfire_Peaks_Early": [["Ice_Wall_Room", "Clockwork_Warp", "Insane"], ["Hailfire_Peaks_B", "GGM_Mumbo"]],
+		"Hailfire_Peaks": [["Cliff_Top", "JiggyWiggySpecial"], ["Cliff_Top", "36_Jiggies"], ["Hailfire_Peaks_Early"]],
 		"Ice_Wall_Room": [["Nest", "Split_Up", "Snooze_Pack"], ["Nest", "Split_Up", "HoneyBack"], ["Nest", "Split_Up", "Glitches"]],
 		"Cloud_Cuckooland": [["Wasteland", "JiggyWiggySpecial"], ["Wasteland", "45_Jiggies"]],
 		"Enter_Pot_O_Gold": [["Cloud_Cuckooland", "CCL_Mumbo"], ["Cloud_Cuckooland", "Split_Up"]],
@@ -269,7 +270,7 @@
 		"Jinjo_HFP_Icy_Tunnel": [["Hailfire_Peaks", "Snowball"], ["Hailfire_Peaks", "Egg_Aim", "Clockworks"]],
 		"Jinjo_HFP_Icicle_Grotto": [["Hailfire_Peaks", "Egg_Aim", "Clockworks"], ["Hailfire_Peaks", "Split_Up", "Leg_Spring"], ["Hailfire_Peaks", "Split_Up", "Wing_Whack", "Glide", "Tricks"]],
 		"Jinjo_HFP_Mildred": [["Hailfire_Peaks", "Explosives"], ["Hailfire_Peaks", "HFP_Mumbo"]],
-		"Jinjo_CCL_Trash_Can": [["Cloud_Cuckooland", "Split_Up", "Egg_Aim", "Clockworks"], ["Cloud_Cuckooland", "Split_Up", "Leg_Spring"], ["Cloud_Cuckooland", "Bee", "Glitches"]],
+		"Jinjo_CCL_Trash_Can": [["Cloud_Cuckooland", "Split_Up", "Egg_Aim", "Clockworks"], ["Cloud_Cuckooland", "Split_Up", "Leg_Spring"], ["Cloud_Cuckooland", "Bee", "Glitches"], ["Cloud_Cuckooland", "Clockwork_Warp"], ["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]],
 		"Jinjo_CCL_Cheese_Wedge": [["Cloud_Cuckooland"]],
 		"Jinjo_CCL_Central_Cavern": [["Cloud_Cuckooland", "Egg_Aim", "Clockworks"], ["Cloud_Cuckooland", "Split_Up"], ["Cloud_Cuckooland", "Bee"]],
 		"Jinjo_CCL_Mingy": [["Cloud_Cuckooland"]],
@@ -277,7 +278,7 @@
 		"Jinjo_IOH_Wooded_Hollow": [[]],
 		"Jinjo_IOH_Wasteland": [["Wasteland"]],
 		"Jinjo_IOH_Cliff_Top": [["Cliff_Top", "Egg_Aim", "Clockworks"], ["Cliff_Top", "Claw_Clambers"]],
-		"Jinjo_IOH_Plataeu": [["Bill_Drill"], ["Glitches"]],
+		"Jinjo_IOH_Plateau": [["Bill_Drill"], ["Glitches"]],
 		"Jinjo_SM_Waterfall": [["Talon_Torpedo"]]
 	},
 
@@ -291,7 +292,7 @@
 		"Red_Jinjos": [["Jinjo_JRL_Big_Fish", "Jinjo_TDL_Near_Entrance", "Jinjo_TDL_Stomping_Plains", "Jinjo_GI_Floor_2", "Jinjo_GI_Floor_5", "Jinjo_CCL_Mingy"]],
 		"Blue_Jinjos": [["Jinjo_GGM_JRL_Pipe", "Jinjo_GGM_Jail_Cell", "Jinjo_WW_Cactus", "Jinjo_TDL_Caged_Near_Unga", "Jinjo_GI_JRL_Pipe", "Jinjo_HFP_Waterfall", "Jinjo_CCL_Trash_Can"]],
 		"Purple_Jinjos": [["Jinjo_MT_Pool", "Jinjo_GI_Floor_3", "Jinjo_HFP_Icicle_Grotto", "Jinjo_HFP_Mildred", "Jinjo_CCL_Cheese_Wedge", "Jinjo_CCL_Wumbas_Wigwam", "Jinjo_IOH_Wooded_Hollow", "Jinjo_SM_Waterfall"]],
-		"Black_Jinjos": [["Jinjo_MT_Temple", "Jinjo_TDL_Trex_Switch", "Jinjo_GI_Outside", "Jinjo_HFP_Pool", "Jinjo_HFP_Icy_Tunnel", "Jinjo_CCL_Central_Cavern", "Jinjo_IOH_Wasteland", "Jinjo_IOH_Cliff_Top", "Jinjo_IOH_Plataeu"]]
+		"Black_Jinjos": [["Jinjo_MT_Temple", "Jinjo_TDL_Trex_Switch", "Jinjo_GI_Outside", "Jinjo_HFP_Pool", "Jinjo_HFP_Icy_Tunnel", "Jinjo_CCL_Central_Cavern", "Jinjo_IOH_Wasteland", "Jinjo_IOH_Cliff_Top", "Jinjo_IOH_Plateau"]]
 	}
 }
 
