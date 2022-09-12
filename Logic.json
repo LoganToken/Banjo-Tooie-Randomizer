@@ -254,7 +254,7 @@
 		"Jinjo_JRL_Blubbers": [["Jolly_Rogers_Lagoon"]],
 		"Jinjo_JRL_Big_Fish": [["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"], ["Jolly_Rogers_Lagoon", "Subaqua"]],
 		"Jinjo_JRL_Seaweed_Sanctum": [["Jolly_Rogers_Lagoon"]],
-		"Jinjo_JRL_Chest": [["Jolly_Rogers_Lagoon", "Sub"], ["Jolly_Rogers_Lagoon", "Talon_Torpedo"], [["Jolly_Rogers_Lagoon", "Subaqua", "Explosives"]]],
+		"Jinjo_JRL_Chest": [["Jolly_Rogers_Lagoon", "Sub"], ["Jolly_Rogers_Lagoon", "Talon_Torpedo"], ["Jolly_Rogers_Lagoon", "Subaqua", "Explosives"]],
 		"Jinjo_TDL_Caged_Underwater": [["Terrydactyland", "Talon_Torpedo"], ["Terrydactyland", "Clockworks", "Egg_Aim", "Insane"], ["Nest", "Insane"]],
 		"Jinjo_TDL_Near_Entrance": [["Terrydactyland", "Egg_Aim", "Explosives"], ["Grenade_Eggs", "Egg_Aim", "Nest"], ["Nest", "Insane"]],
 		"Jinjo_TDL_Caged_Near_Unga": [["Terrydactyland", "Clockworks"], ["Nest", "Insane"]],
