@@ -738,76 +738,98 @@
 
 	"Cheato_Pages": {
 		"Cheato Page: MT: Snake Heads": [
-			[]
+			["Relic"]
 		],
 		"Cheato Page: MT: Prison Compound": [
-			[]
+			["Prison_Compound", "Grip_Grab"],
+			["Prison_Compound", "Clockworks", "Egg_Aim"]
 		],
 		"Cheato Page: MT: Jade Snake Grove": [
-			[]
+			["JSG", "Clockworks", "Egg_Aim"],
+			["JSG", "Grip_Grab"]
 		],
 		"Cheato Page: GGM: Canary Mary Race": [
-			[]
+			["Free_Canary_Mary"]
 		],
 		"Cheato Page: GGM: Level Entrance": [
 			[]
 		],
 		"Cheato Page: GGM: Water Storage": [
-			[]
+			["Glitter_Gulch_Mine", "Trick"],
+			["Glitter_Gulch_Mine", "Grip_Grab"]
 		],
 		"Cheato Page: WW: Haunted Cavern": [
-			[]
+			["Witchyworld", "Grip_Grab"],
+			["Witchyworld", "Clockworks", "Egg_Aim"],
+			["Witchyworld", "Split_Up", "Leg_Spring", "Glide"],
+			["Witchyworld", "Split_Up", "Leg_Spring", "Wing_Whack"]
 		],
 		"Cheato Page: WW: The Inferno (Van)": [
-			[]
+			["Inferno"]
 		],
 		"Cheato Page: WW: Saucer of Peril": [
-			[]
+			["Witchyworld", "WW_Mumbo", "Detonator", "Saucer_Button", "Explosives"]
 		],
 		"Cheato Page: JRL: Pawno's": [
 			[]
 		],
 		"Cheato Page: JRL: Seemee": [
-			[]
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo"]
 		],
 		"Cheato Page: JRL: Ancient Swimming Baths": [
-			[]
+			["Atlantis", "Talon Torpedo", "Clockworks", "Egg_Aim"],
+			["Atlantis", "Talon Torpedo", "Split_Up", "Wing_Whack", "Trick"],
+			["Atlantis", "Talon Torpedo", "Split_Up", "Pack_Whack"],
+			["Atlantis", "Talon Torpedo", "Split_Up", "Leg_Spring", "Glide"]
 		],
 		"Cheato Page: TDL: Dippy's Pool": [
-			[]
+			["Nest"],
+			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes"],
+			["Terrydactyland", "Split_Up", "Clockworks", "Trick"]
 		],
 		"Cheato Page: TDL: Inside the Mountain": [
-			[]
+			["Terrydactyland", "Dinosaur"],
+			["Terrydactyland", "Clockworks", "Glitches"]
 		],
 		"Cheato Page: TDL: Boulder": [
-			[]
+			["Terrydactyland", "Grip_Grab", "Bill Drill"],
+			["Terrydactyland", "Grip_Grab", "Glitches"],
+			["Nest", "Tricks", "Glitches"],
+			["Nest", "Bill_Drill", "Tricks"]
 		],
 		"Cheato Page: GI: Loggo": [
-			[]
+			["Inside_GI", "Grenades"],
+			["Inside_GI", "Clockworks", "Bill_Drill"]
 		],
 		"Cheato Page: GI: Floor 2": [
-			[]
+			["Grunty_Industries", "Clockworks", "Egg_Aim"],
+			["Roof"],
 		],
 		"Cheato Page: GI: Repair Depot": [
-			[]
+			["Weldar_Door"]
 		],
 		"Cheato Page: HFP: Lava Side": [
-			[]
+			["Hailfire_Peaks", "Glitches"],
+			["Hailfire_Peaks", "Claw_Clambers", "Explosives"],
+			["Hailfire_Peaks", "Insane"]
 		],
 		"Cheato Page: HFP: Icicle Grotto": [
-			[]
+			["Clockworks"],
+			["Split_Up", "Shack_Pack"]
 		],
 		"Cheato Page: HFP: Icy Side": [
-			[]
+			["Tricks"],
+			["Grenades", "Egg_Aim", "Split_Up"],
+			["Grenades", "Egg_Aim", "Clockworks"]
 		],
 		"Cheato Page: CCL: Canary Mary": [
-			[]
+			["Free_Canary_Mary"]
 		],
 		"Cheato Page: CCL: Pot o' Gold": [
-			[]
+			["Pot_O_Gold"]
 		],
 		"Cheato Page: CCL: Zubbas' Nest": [
-			[]
+			["Bee"]
 		],
 		"Cheato Page: Spiral Mountain": [
 			[]
