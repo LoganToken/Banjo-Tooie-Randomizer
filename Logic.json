@@ -816,79 +816,89 @@
 
 	"Honeycombs": {
 		"Honeycomb: MT: Entrance": [
-			[]
+			["Stony"],
+			["Clockworks"],
+			["MT_Flight", "Glitches"]
 		],
 		"Honeycomb: MT: Bovina": [
 			[]
 		],
 		"Honeycomb: MT: Treasure Chamber": [
-			[]
+			["Egg_Aim"],
+			["MT_Flight", "Glitches"]
 		],
 		"Honeycomb: GGM: Boulder (Toxic Gas Cave)": [
-			[]
+			["Glitter_Gulch_Mine", "Break_Rocks_In_GGM"]
 		],
 		"Honeycomb: GGM: Boulder": [
-			[]
+			["Glitter_Gulch_Mine", "Break_Rocks_In_GGM"],
+			["Glitter_Gulch_Mine", "Glitches"]
 		],
 		"Honeycomb: GGM: Train Station": [
-			[]
+			["Glitter_Gulch_Mine"]
 		],
 		"Honeycomb: WW: Space Zone": [
-			[]
+			["Witchyworld", "Grip_Grab"],
+			["Witchyworld", "Tricks"]
 		],
 		"Honeycomb: WW: Mumbo's Skull": [
-			[]
+			["Witchyworld", "Inferno"]
 		],
 		"Honeycomb: WW: Crazy Castle Area": [
-			[]
+			["Witchyworld", "Explosives"]
 		],
 		"Honeycomb: JRL: Seemee": [
-			[]
+			["Jolly_Rogers_Lagoon", "Atlantis", "Talon_Torpedo"]
 		],
 		"Honeycomb: JRL: Atlantis": [
-			[]
+			["Jolly_Rogers_Lagoon", "Atlantis"]
 		],
 		"Honeycomb: JRL: Waste Pipe": [
-			[]
+			["Jolly_Rogers_Lagoon", "Grip_Grab"],
+			["Jolly_Rogers_Lagoon", "Egg_Aim", "Clockworks", "Tricks"]
 		],
 		"Honeycomb: TDL: Central Area": [
-			[]
+			["Terrydactyland"]
 		],
 		"Honeycomb: TDL: Styracosaurus Family Cave": [
-			[]
+			["Terrydactyland", "Egg_Aim", "Clockworks"],
+			["Terrydactyland", "Split_Up", "Bill_Drill"]
 		],
 		"Honeycomb: TDL: River Passage": [
-			[]
+			["Terrydactyland"]
 		],
 		"Honeycomb: GI: Floor 3": [
-			[]
+			["Grunty_Industries", "Roof", "Egg_Aim", "Clockworks"],
+			["Grunty_Industries", "Roof", "Grip_Grab"]
 		],
 		"Honeycomb: GI: Train Station": [
-			[]
+			["Grunty_Industries", "Inside", "Tricks"],
+			["Grunty_Industries", "Inside", "Grip_Grab"]
 		],
 		"Honeycomb: GI: Chimney": [
-			[]
+			["Grunty_Industries", "Roof"]
 		],
 		"Honeycomb: HFP: Inside the Volcano": [
-			[]
+			["Hailfire_Peaks"]
 		],
 		"Honeycomb: HFP: Train Station": [
-			[]
+			["Hailfire_Peaks", "Grip_Grab"],
+			["Hailfire_Peaks", "Clockwork_Shot"]
 		],
 		"Honeycomb: HFP: Lava Side": [
-			[]
+			["Hailfire_Peaks"]
 		],
 		"Honeycomb: CCL: Underground": [
-			[]
+			["Cloud_Cuckooland", "Bill_Drill"]
 		],
 		"Honeycomb: CCL: Trash Can": [
-			[]
+			["Cloud_Cuckooland"]
 		],
 		"Honeycomb: CCL: Pot o' Gold": [
-			[]
+			["Cloud_Cuckooland"]
 		],
 		"Honeycomb: IoH: Plateau": [
-			[]
+			["Plateau"]
 		]
 	},
 
@@ -897,52 +907,52 @@
 			[]
 		],
 		"Glowbo: MT: Behind Wumba's Wigwam": [
-			[]
+			["JSG"]
 		],
 		"Glowbo: GGM: Near Entrance": [
-			[]
+			["Glitter_Gulch_Mine"]
 		],
 		"Glowbo: GGM: Mine Entrance 2": [
-			[]
+			["Glitter_Gulch_Mine"]
 		],
 		"Glowbo: WW: The Inferno": [
-			[]
+			["Witchyworld", "Inferno"]
 		],
 		"Glowbo: WW: Inside Wumba's Wigwam": [
-			[]
+			["Witchyworld"]
 		],
 		"Glowbo: JRL: Pawno's Emporium": [
-			[]
+			["Jolly_Rogers_Lagoon"]
 		],
 		"Glowbo: JRL: Under Wumba's Wigwam": [
-			[]
+			["Jolly_Rogers_Lagoon", "Atlantis"]
 		],
 		"Glowbo: TDL: Near Unga Bunga's Cave Entrance": [
-			[]
+			["Terrydactyland"]
 		],
 		"Glowbo: TDL: Behind Mumbo's Skull": [
-			[]
+			["Terrydactyland"]
 		],
 		"Glowbo: GI: Floor 2": [
-			[]
+			["Grunty_Industries", "Floor_2"]
 		],
 		"Glowbo: GI: Floor 3": [
-			[]
+			["Grunty_Industries", "Roof"]
 		],
 		"Glowbo: HFP: Lava Side": [
-			[]
+			["Hailfire_Peaks"]
 		],
 		"Glowbo: HFP: Icy Side": [
-			[]
+			["Hailfire_Peaks"]
 		],
 		"Glowbo: CCL: Overworld (Underwater)": [
-			[]
+			["Cloud_Cuckooland"]
 		],
 		"Glowbo: CCL: Central Cavern (Underwater)": [
-			[]
+			["Cloud_Cuckooland"]
 		],
 		"Glowbo: IoH: Cliff Top": [
-			[]
+			["Cliff_Top"]
 		]
 	},
 
