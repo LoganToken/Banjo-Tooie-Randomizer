@@ -1,189 +1,688 @@
 {
 	"Moves": {
-		"Egg_Aim": [["Egg_Aim_Found"], ["Egg_Aim_Found", "Silo_Bypass"]],
-		"Breegull_Blaster": [["Breegull_Blaster_Found"], ["Breegull_Blaster_Found", "Silo_Bypass"]],
-		"Grip_Grab": [["Grip_Grab_Found", "JSG"], ["Grip_Grab_Found", "Silo_Bypass"]],
-		"Bill_Drill": [["Bill_Drill_Found"], ["Bill_Drill_Found", "Silo_Bypass"]],
-		"Beak_Bayonet": [["Beak_Bayonet_Found", "Break_Rocks_In_GGM"], ["Beak_Bayonet_Found", "Silo_Bypass"]],
-		"Split_Up": [["Split_Up_Found", "Witchyworld"], ["Split_Up_Found", "Silo_Bypass"]],
-		"Pack_Whack": [["Pack_Whack_Found", "Split_Up", "Witchyworld"], ["Pack_Whack_Found", "Silo_Bypass"]],
-		"Airborne": [["Airborne_Found", "Witchyworld"], ["Airborne_Found", "Silo_Bypass"]],
-		"Wing_Whack": [["Wing_Whack_Found", "Explosives", "Split_Up", "Jolly_Rogers_Lagoon"], ["Wing_Whack_Found", "Silo_Bypass"]],
-		"Subaqua": [["Subaqua_Found", "Jolly_Rogers_Lagoon"], ["Subaqua_Found", "Silo_Bypass"]],
-		"Talon_Torpedo": [["Talon_Torpedo_Found", "Jolly_Rogers_Lagoon"], ["Talon_Torpedo_Found", "Silo_Bypass"]],
-		"Springy_Step_Shoes": [["Springy_Step_Shoes_Found", "Terrydactyland"], ["Springy_Step_Shoes_Found", "Silo_Bypass"]],
-		"Taxi_Pack": [["Taxi_Pack_Found", "Split_Up", "Pack_Whack", "Terrydactyland"], ["Taxi_Pack_Found", "Split_Up", "Grip_Grab_Found", "Terrydactyland"], ["Taxi_Pack_Found", "Split_Up", "Insane", "Terrydactyland"], ["Taxi_Pack_Found", "Silo_Bypass"]],
-		"Hatch": [["Hatch_Found", "Split_Up", "Terrydactyland"], ["Hatch_Found", "Split_Up", "Relic"], ["Hatch_Found", "Silo_Bypass"]],
-		"Claw_Clambers": [["Claw_Clambers_Found", "Inside_GI", "Grunty_Industries"], ["Claw_Clambers_Found", "Silo_Bypass"]],
-		"Snooze_Pack": [["Snooze_Pack_Found", "Split_Up", "Toxic_Waste", "Grunty_Industries"], ["Snooze_Pack_Found", "Silo_Bypass"]],
-		"Leg_Spring": [["Leg_Spring_Found", "Split_Up", "Floor_2", "Grunty_Industries"], ["Leg_Spring_Found", "Silo_Bypass"]],
-		"Shack_Pack": [["Shack_Pack_Found", "Split_Up", "Hailfire_Peaks"], ["Shack_Pack_Found", "Silo_Bypass"]],
-		"Glide": [["Glide_Found", "Split_Up", "Hailfire_Peaks"], ["Glide_Found", "Silo_Bypass"]],
-		"Sack_Pack": [["Sack_Pack_Found", "Split_Up", "Shack_Pack", "Cloud_Cuckooland"], ["Sack_Pack_Found", "Silo_Bypass"]],
-		"Fire_Eggs": [["Fire_Eggs_Found"], ["Fire_Eggs_Found", "Silo_Bypass"]],
-		"Grenade_Eggs": [["Grenade_Eggs_Found", "Pine_Grove"], ["Grenade_Eggs_Found", "Silo_Bypass"]],
-		"Ice_Eggs": [["Ice_Eggs_Found", "Cliff_Top"], ["Ice_Eggs_Found", "Silo_Bypass"]],
-		"Clockworks": [["Clockworks_Found", "Wasteland"], ["Clockworks_Found", "Silo_Bypass"]],
-		"Double_Air": [["Double_Air_Found", "Bill_Drill"], ["Double_Air_Found", "Silo_Bypass"]],
-		"Goggles": [["Goggles_Found"]],
-		"JiggyWiggySpecial": [["JiggyWiggySpecial_Found", "Code_Chamber"], ["JiggyWiggySpecial_Found", "Silo_Bypass"]],
-		"SuperBanjo": [["SuperBanjo_Found", "Code_Chamber"], ["SuperBanjo_Found", "Silo_Bypass"]],
-		"NestKing": [["NestKing_Found", "Code_Chamber"], ["NestKing_Found", "Silo_Bypass"]],
-		"HoneyBack": [["HoneyBack_Found", "Code_Chamber"], ["HoneyBack_Found", "Silo_Bypass"]],
-		"MT_Mumbo": [["MT_Mumbo_Found"]],
-		"GGM_Mumbo": [["GGM_Mumbo_Found"]],
-		"WW_Mumbo": [["WW_Mumbo_Found", "Witchyworld", "Inferno"]],
-		"JRL_Mumbo": [["JRL_Mumbo_Found", "Jolly_Rogers_Lagoon"]],
-		"TDL_Mumbo": [["TDL_Mumbo_Found", "Terrydactyland"]],
-		"GI_Mumbo": [["GI_Mumbo_Found", "Roof", "Grunty_Industries"]],
-		"HFP_Mumbo": [["HFP_Mumbo_Found", "Hailfire_Peaks"]],
-		"CCL_Mumbo": [["CCL_Mumbo_Found", "Cloud_Cuckooland"]],
-		"IoH_Mumbo": [["IoH_Mumbo_Found", "Cliff_Top"]],
-		"Stony": [["Stony_Found", "JSG"]],
-		"Detonator": [["Detonator_Found"]],
-		"Van": [["Van_Found", "Witchyworld"]],
-		"Sub": [["Sub_Found", "Jolly_Rogers_Lagoon"]],
-		"Dinosaur": [["Dinosaur_Found", "Terrydactyland"]],
-		"Washing_Machine": [["Washing_Machine_Found", "Floor_2", "Grunty_Industries"]],
-		"Snowball": [["Snowball_Found", "Hailfire_Peaks"]],
-		"Bee": [["Bee_Found", "Cloud_Cuckooland"]],
-		"Dragon_Kazooie": [["Dragon_Kazooie_Found", "Pine_Grove"]]
+		"Egg_Aim": [
+			["Egg_Aim_Found"],
+			["Egg_Aim_Found", "Silo_Bypass"]
+		],
+		"Breegull_Blaster": [
+			["Breegull_Blaster_Found"],
+			["Breegull_Blaster_Found", "Silo_Bypass"]
+		],
+		"Grip_Grab": [
+			["Grip_Grab_Found", "JSG"],
+			["Grip_Grab_Found", "Silo_Bypass"]
+		],
+		"Bill_Drill": [
+			["Bill_Drill_Found"],
+			["Bill_Drill_Found", "Silo_Bypass"]
+		],
+		"Beak_Bayonet": [
+			["Beak_Bayonet_Found", "Break_Rocks_In_GGM"],
+			["Beak_Bayonet_Found", "Silo_Bypass"]
+		],
+		"Split_Up": [
+			["Split_Up_Found", "Witchyworld"],
+			["Split_Up_Found", "Silo_Bypass"]
+		],
+		"Pack_Whack": [
+			["Pack_Whack_Found", "Split_Up", "Witchyworld"],
+			["Pack_Whack_Found", "Silo_Bypass"]
+		],
+		"Airborne": [
+			["Airborne_Found", "Witchyworld"],
+			["Airborne_Found", "Silo_Bypass"]
+		],
+		"Wing_Whack": [
+			["Wing_Whack_Found", "Explosives", "Split_Up", "Jolly_Rogers_Lagoon"],
+			["Wing_Whack_Found", "Silo_Bypass"]
+		],
+		"Subaqua": [
+			["Subaqua_Found", "Jolly_Rogers_Lagoon"],
+			["Subaqua_Found", "Silo_Bypass"]
+		],
+		"Talon_Torpedo": [
+			["Talon_Torpedo_Found", "Jolly_Rogers_Lagoon"],
+			["Talon_Torpedo_Found", "Silo_Bypass"]
+		],
+		"Springy_Step_Shoes": [
+			["Springy_Step_Shoes_Found", "Terrydactyland"],
+			["Springy_Step_Shoes_Found", "Silo_Bypass"]
+		],
+		"Taxi_Pack": [
+			["Taxi_Pack_Found", "Split_Up", "Pack_Whack", "Terrydactyland"],
+			["Taxi_Pack_Found", "Split_Up", "Grip_Grab_Found", "Terrydactyland"],
+			["Taxi_Pack_Found", "Split_Up", "Insane", "Terrydactyland"],
+			["Taxi_Pack_Found", "Silo_Bypass"]
+		],
+		"Hatch": [
+			["Hatch_Found", "Split_Up", "Terrydactyland"],
+			["Hatch_Found", "Split_Up", "Relic"],
+			["Hatch_Found", "Silo_Bypass"]
+		],
+		"Claw_Clambers": [
+			["Claw_Clambers_Found", "Inside_GI", "Grunty_Industries"],
+			["Claw_Clambers_Found", "Silo_Bypass"]
+		],
+		"Snooze_Pack": [
+			["Snooze_Pack_Found", "Split_Up", "Toxic_Waste", "Grunty_Industries"],
+			["Snooze_Pack_Found", "Silo_Bypass"]
+		],
+		"Leg_Spring": [
+			["Leg_Spring_Found", "Split_Up", "Floor_2", "Grunty_Industries"],
+			["Leg_Spring_Found", "Silo_Bypass"]
+		],
+		"Shack_Pack": [
+			["Shack_Pack_Found", "Split_Up", "Hailfire_Peaks"],
+			["Shack_Pack_Found", "Silo_Bypass"]
+		],
+		"Glide": [
+			["Glide_Found", "Split_Up", "Hailfire_Peaks"],
+			["Glide_Found", "Silo_Bypass"]
+		],
+		"Sack_Pack": [
+			["Sack_Pack_Found", "Split_Up", "Shack_Pack", "Cloud_Cuckooland"],
+			["Sack_Pack_Found", "Silo_Bypass"]
+		],
+		"Fire_Eggs": [
+			["Fire_Eggs_Found"],
+			["Fire_Eggs_Found", "Silo_Bypass"]
+		],
+		"Grenade_Eggs": [
+			["Grenade_Eggs_Found", "Pine_Grove"],
+			["Grenade_Eggs_Found", "Silo_Bypass"]
+		],
+		"Ice_Eggs": [
+			["Ice_Eggs_Found", "Cliff_Top"],
+			["Ice_Eggs_Found", "Silo_Bypass"]
+		],
+		"Clockworks": [
+			["Clockworks_Found", "Wasteland"],
+			["Clockworks_Found", "Silo_Bypass"]
+		],
+		"Double_Air": [
+			["Double_Air_Found", "Bill_Drill"],
+			["Double_Air_Found", "Silo_Bypass"]
+		],
+		"Goggles": [
+			["Goggles_Found"]
+		],
+		"JiggyWiggySpecial": [
+			["JiggyWiggySpecial_Found", "Code_Chamber"],
+			["JiggyWiggySpecial_Found", "Silo_Bypass"]
+		],
+		"SuperBanjo": [
+			["SuperBanjo_Found", "Code_Chamber"],
+			["SuperBanjo_Found", "Silo_Bypass"]
+		],
+		"NestKing": [
+			["NestKing_Found", "Code_Chamber"],
+			["NestKing_Found", "Silo_Bypass"]
+		],
+		"HoneyBack": [
+			["HoneyBack_Found", "Code_Chamber"],
+			["HoneyBack_Found", "Silo_Bypass"]
+		],
+		"MT_Mumbo": [
+			["MT_Mumbo_Found"]
+		],
+		"GGM_Mumbo": [
+			["GGM_Mumbo_Found"]
+		],
+		"WW_Mumbo": [
+			["WW_Mumbo_Found", "Witchyworld", "Inferno"]
+		],
+		"JRL_Mumbo": [
+			["JRL_Mumbo_Found", "Jolly_Rogers_Lagoon"]
+		],
+		"TDL_Mumbo": [
+			["TDL_Mumbo_Found", "Terrydactyland"]
+		],
+		"GI_Mumbo": [
+			["GI_Mumbo_Found", "Roof", "Grunty_Industries"]
+		],
+		"HFP_Mumbo": [
+			["HFP_Mumbo_Found", "Hailfire_Peaks"]
+		],
+		"CCL_Mumbo": [
+			["CCL_Mumbo_Found", "Cloud_Cuckooland"]
+		],
+		"IoH_Mumbo": [
+			["IoH_Mumbo_Found", "Cliff_Top"]
+		],
+		"Stony": [
+			["Stony_Found", "JSG"]
+		],
+		"Detonator": [
+			["Detonator_Found"]
+		],
+		"Van": [
+			["Van_Found", "Witchyworld"]
+		],
+		"Sub": [
+			["Sub_Found", "Jolly_Rogers_Lagoon"]
+		],
+		"Dinosaur": [
+			["Dinosaur_Found", "Terrydactyland"]
+		],
+		"Washing_Machine": [
+			["Washing_Machine_Found", "Floor_2", "Grunty_Industries"]
+		],
+		"Snowball": [
+			["Snowball_Found", "Hailfire_Peaks"]
+		],
+		"Bee": [
+			["Bee_Found", "Cloud_Cuckooland"]
+		],
+		"Dragon_Kazooie": [
+			["Dragon_Kazooie_Found", "Pine_Grove"]
+		]
 	},
 
 	"Intermediates": {
-		"Explosives": [["Grenade_Eggs"], ["Clockworks"]],
-		"Clockwork_Warp": [["Grenade_Eggs", "Egg_Aim", "Clockworks", "Glitches"]],
-		"MT_Flight": [["Bill_Drill"], ["MT_Mumbo"]],
-		"Relic": [["Egg_Aim", "Grip_Grab"], ["MT_Flight", "Tricks"], ["MT_Flight", "Glitches"]],
-		"JSG": [["MT_Flight", "Glitches"], ["MT_Mumbo"]],
-		"Code_Chamber": [["MT_Mumbo", "Egg_Aim"], ["JSG", "Explosives", "Egg_Aim"]],
-		"Prison_Compound": [["MT_Mumbo"], ["Explosives"], ["MT_Flight", "Glitches"]],
-		"Plateau": [["Grip_Grab"], ["Tricks"], ["Glitter_Gulch_Mine_Early"]],
-		"Glitter_Gulch_Mine_Early": [["Plateau", "Glitches"], ["Prison_Compound", "Bill_Drill"]],
-		"Glitter_Gulch_Mine": [["Plateau", "JiggyWiggySpecial"], ["Plateau", "4_Jiggies"], ["Glitter_Gulch_Mine_Early"]],
-		"Break_Rocks_In_GGM": [["Glitter_Gulch_Mine", "Bill_Drill"], ["Glitter_Gulch_Mine", "Detonator"]],
-		"Free_Canary_Mary": [["Glitter_Gulch_Mine", "Detonator"], ["Glitter_Gulch_Mine", "Clockworks"]],
-		"Pine_Grove": [["Plateau", "Fire_Eggs"]],
-		"Witchyworld_Early": [["Oogle_Cave_BK"]],
-		"Witchyworld": [["Pine_Grove", "JiggyWiggySpecial"], ["Pine_Grove", "8_Jiggies"], ["Witchyworld_Early"]],
-		"Inferno": [["Clockworks", "Glitches"], ["Van"]],
-		"Saucer_Button": [["Clockworks",  "Glitches"], ["Witchyworld", "Egg_Aim", "Explosives"], ["Witchyworld", "Insane"]],
-		"Cliff_Top": [["Plateau", "Split_Up"], ["Hailfire_Peaks_Early", "SuperBanjo"]],
-		"Jolly_Rogers_Lagoon_Early": [["Hailfire_Peaks", "Split_Up", "Cloud_Cuckooland"], ["Hailfire_Peaks", "Grip_Grab", "Glitches"]],
-		"Jolly_Rogers_Lagoon": [["Cliff_Top", "JiggyWiggySpecial"], ["Cliff_Top", "14_Jiggies"], ["Jolly_Rogers_Lagoon_Early"]],
-		"Toxic_Waste_Pipe_Button": [["Jolly_Rogers_Lagoon", "Explosives"], ["Jolly_Rogers_Lagoon", "Bill_Drill"], ["Grunty_Industries", "Toxic_Waste", "Egg_Aim", "Clockworks"]],
-		"Swim_Through_Pipes": [["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Double_Air", "Tricks"], ["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Subaqua"]],
-		"Wasteland": [["Pine_Grove", "Talon_Torpedo"], ["Terrydactyland_Early"]],
-		"Terrydactyland": [["Wasteland", "JiggyWiggySpecial"], ["Wasteland", "20_Jiggies"], ["Terrydactyland_Early"]],
-		"Terrydactyland_Early": [["Relic", "Clockworks", "Egg_Aim", "Glitches"]],
-		"Nest": [["Terrydactyland", "Springy_Step_Shoes"], ["Terrydactyland", "Clockwork_Warp"], ["Terrydactyland", "Split_Up", "Clockworks", "Egg_Aim", "Glitches"]],
-		"Oogle_Cave_K": [["Oogle_Cave_BK", "Split_Up"], ["Terrydactyland", "Split_Up", "SuperBanjo", "Glitches"]],
-		"Oogle_Cave_BK": [["Terrydactyland", "Clockwork_Warp"], ["Terrydactyland", "Dinosaur", "TDL_Mumbo"], ["Terrydactyland", "Nest", "Glitches"], ["Oogle_Cave_K", "Witchyworld", "Claw_Clambers"], ["Oogle_Cave_K", "Witchyworld", "Tricks"]],
-		"Quagmire": [["Wasteland", "Springy_Step_Shoes"]],
-		"Grunty_Industries": [["Quagmire", "JiggyWiggySpecial"], ["Quagmire", "28_Jiggies"]],
-		"Inside_GI": [["Grunty_Industries", "GGM_Mumbo"], ["Grunty_Industries", "Clockwork_Warp"], ["Grunty_Industries", "Clockworks", "Glitches", "Egg_Aim"]],
-		"Floor_4_Early": [["Inside_GI", "Explosives", "Egg_Aim", "Glitches"]],
-		"Floor_4_Crushers": [["Roof", "GI_Mumbo", "Washing_Machine", "Bill_Drill"], ["Floor_4_Early"], ["Roof", "Split-Up", "Glitches"]],
-		"Floor_2": [["Inside_GI", "Claw_Clambers"], ["Floor_4_Early"], ["Grunty_Industries", "Clockworks"]],
-		"Roof": [["Floor_2", "Claw_Clambers"], ["Floor_4_Early"], ["Floor_2", "Washing_Machine"], ["Floor_2", "Leg_Spring", "Split_Up"], ["Grunty_Industries", "Claw_Clambers", "Tricks"], ["Inside_GI", "Split_Up", "Claw_Clambers", "Leg_Spring", "Wing_Whack"]],
-		"Battery": [["Split_Up", "Pack_Whack", "Taxi_Pack"]],
-		"Toxic_Waste": [["Inside_GI", "Battery"]],
-		"Floor_2_Button": [["Floor_2", "Split_Up", "Leg_Spring"], ["Floor_2", "Claw_Clambers"], ["Roof"]],
-		"Weldar_Door": [["Roof", "GI_Mumbo", "Washing_Machine", "Battery", "Grenade_Eggs", "Bill Drill"]],
+		"Explosives": [
+			["Grenade_Eggs"],
+			["Clockworks"]
+		],
+		"Clockwork_Warp": [
+			["Grenade_Eggs", "Egg_Aim", "Clockworks", "Glitches"]
+		],
+		"MT_Flight": [
+			["Bill_Drill"],
+			["MT_Mumbo"]
+		],
+		"Relic": [
+			["Egg_Aim", "Grip_Grab"],
+			["MT_Flight", "Tricks"],
+			["MT_Flight", "Glitches"]
+		],
+		"JSG": [
+			["MT_Flight", "Glitches"],
+			["MT_Mumbo"]
+		],
+		"Code_Chamber": [
+			["MT_Mumbo", "Egg_Aim"],
+			["JSG", "Explosives", "Egg_Aim"]
+		],
+		"Prison_Compound": [
+			["MT_Mumbo"],
+			["Explosives"],
+			["MT_Flight", "Glitches"]
+		],
+		"Plateau": [
+			["Grip_Grab"],
+			["Tricks"],
+			["Glitter_Gulch_Mine_Early"]
+		],
+		"Glitter_Gulch_Mine_Early": [
+			["Plateau", "Glitches"],
+			["Prison_Compound", "Bill_Drill"]
+		],
+		"Glitter_Gulch_Mine": [
+			["Plateau", "JiggyWiggySpecial"],
+			["Plateau", "4_Jiggies"],
+			["Glitter_Gulch_Mine_Early"]
+		],
+		"Break_Rocks_In_GGM": [
+			["Glitter_Gulch_Mine", "Bill_Drill"],
+			["Glitter_Gulch_Mine", "Detonator"]
+		],
+		"Free_Canary_Mary": [
+			["Glitter_Gulch_Mine", "Detonator"],
+			["Glitter_Gulch_Mine", "Clockworks"]
+		],
+		"Pine_Grove": [
+			["Plateau", "Fire_Eggs"]
+		],
+		"Witchyworld_Early": [
+			["Oogle_Cave_BK"]
+		],
+		"Witchyworld": [
+			["Pine_Grove", "JiggyWiggySpecial"],
+			["Pine_Grove", "8_Jiggies"],
+			["Witchyworld_Early"]
+		],
+		"Inferno": [
+			["Clockworks", "Glitches"],
+			["Van"]
+		],
+		"Saucer_Button": [
+			["Clockworks", "Glitches"],
+			["Witchyworld", "Egg_Aim", "Explosives"],
+			["Witchyworld", "Insane"]
+		],
+		"Cliff_Top": [
+			["Plateau", "Split_Up"],
+			["Hailfire_Peaks_Early", "SuperBanjo"]
+		],
+		"Jolly_Rogers_Lagoon_Early": [
+			["Hailfire_Peaks", "Split_Up", "Cloud_Cuckooland"],
+			["Hailfire_Peaks", "Grip_Grab", "Glitches"]
+		],
+		"Jolly_Rogers_Lagoon": [
+			["Cliff_Top", "JiggyWiggySpecial"],
+			["Cliff_Top", "14_Jiggies"],
+			["Jolly_Rogers_Lagoon_Early"]
+		],
+		"Toxic_Waste_Pipe_Button": [
+			["Jolly_Rogers_Lagoon", "Explosives"],
+			["Jolly_Rogers_Lagoon", "Bill_Drill"],
+			["Grunty_Industries", "Toxic_Waste", "Egg_Aim", "Clockworks"]
+		],
+		"Swim_Through_Pipes": [
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Double_Air", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Subaqua"]
+		],
+		"Wasteland": [
+			["Pine_Grove", "Talon_Torpedo"],
+			["Terrydactyland_Early"]
+		],
+		"Terrydactyland": [
+			["Wasteland", "JiggyWiggySpecial"],
+			["Wasteland", "20_Jiggies"],
+			["Terrydactyland_Early"]
+		],
+		"Terrydactyland_Early": [
+			["Relic", "Clockworks", "Egg_Aim", "Glitches"]
+		],
+		"Nest": [
+			["Terrydactyland", "Springy_Step_Shoes"],
+			["Terrydactyland", "Clockwork_Warp"],
+			["Terrydactyland", "Split_Up", "Clockworks", "Egg_Aim", "Glitches"]
+		],
+		"Oogle_Cave_K": [
+			["Oogle_Cave_BK", "Split_Up"],
+			["Terrydactyland", "Split_Up", "SuperBanjo", "Glitches"]
+		],
+		"Oogle_Cave_BK": [
+			["Terrydactyland", "Clockwork_Warp"],
+			["Terrydactyland", "Dinosaur", "TDL_Mumbo"],
+			["Terrydactyland", "Nest", "Glitches"],
+			["Oogle_Cave_K", "Witchyworld", "Claw_Clambers"],
+			["Oogle_Cave_K", "Witchyworld", "Tricks"]
+		],
+		"Quagmire": [
+			["Wasteland", "Springy_Step_Shoes"]
+		],
+		"Grunty_Industries": [
+			["Quagmire", "JiggyWiggySpecial"],
+			["Quagmire", "28_Jiggies"]
+		],
+		"Inside_GI": [
+			["Grunty_Industries", "GGM_Mumbo"],
+			["Grunty_Industries", "Clockwork_Warp"],
+			["Grunty_Industries", "Clockworks", "Glitches", "Egg_Aim"]
+		],
+		"Floor_4_Early": [
+			["Inside_GI", "Explosives", "Egg_Aim", "Glitches"]
+		],
+		"Floor_4_Crushers": [
+			["Roof", "GI_Mumbo", "Washing_Machine", "Bill_Drill"],
+			["Floor_4_Early"],
+			["Roof", "Split-Up", "Glitches"]
+		],
+		"Floor_2": [
+			["Inside_GI", "Claw_Clambers"],
+			["Floor_4_Early"],
+			["Grunty_Industries", "Clockworks"]
+		],
+		"Roof": [
+			["Floor_2", "Claw_Clambers"],
+			["Floor_4_Early"],
+			["Floor_2", "Washing_Machine"],
+			["Floor_2", "Leg_Spring", "Split_Up"],
+			["Grunty_Industries", "Claw_Clambers", "Tricks"],
+			["Inside_GI", "Split_Up", "Claw_Clambers", "Leg_Spring", "Wing_Whack"]
+		],
+		"Battery": [
+			["Split_Up", "Pack_Whack", "Taxi_Pack"]
+		],
+		"Toxic_Waste": [
+			["Inside_GI", "Battery"]
+		],
+		"Floor_2_Button": [
+			["Floor_2", "Split_Up", "Leg_Spring"],
+			["Floor_2", "Claw_Clambers"],
+			["Roof"]
+		],
+		"Weldar_Door": [
+			["Roof", "GI_Mumbo", "Washing_Machine", "Battery", "Grenade_Eggs", "Bill Drill"]
+		],
 		"Hailfire_Peaks_B": ["Toxic_Waste", "Glitches"],
-		"Hailfire_Peaks_Early": [["Ice_Wall_Room", "Clockwork_Warp", "Insane"], ["Hailfire_Peaks_B", "GGM_Mumbo"]],
-		"Hailfire_Peaks": [["Cliff_Top", "JiggyWiggySpecial"], ["Cliff_Top", "36_Jiggies"], ["Hailfire_Peaks_Early"]],
-		"Ice_Wall_Room": [["Nest", "Split_Up", "Snooze_Pack"], ["Nest", "Split_Up", "HoneyBack"], ["Nest", "Split_Up", "Glitches"]],
-		"Cloud_Cuckooland": [["Wasteland", "JiggyWiggySpecial"], ["Wasteland", "45_Jiggies"]],
-		"Enter_Pot_O_Gold": [["Cloud_Cuckooland", "CCL_Mumbo"], ["Cloud_Cuckooland", "Split_Up"]],
-		"Open_Pot_O_Gold": [["Fire_Eggs", "Grenade_Eggs", "Ice_Eggs"]],
-		"Floatus_Floatium": [["Cloud_Cuckooland", "Split_Up", "Hatch", "Taxi_Pack"]],
-		"Event_1": [["Cloud_Cuckooland", "Springy_Step_Shoes"], ["Cloud_Cuckooland", "Clockworks"]],
-		"Event_2": [["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Floatus_Floatium"], ["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Pack_Whack"]],
-		"Event_3": [["Cloud_Cuckooland", "Split_Up"], ["Cloud_Cuckooland", "Bee"]]
+		"Hailfire_Peaks_Early": [
+			["Ice_Wall_Room", "Clockwork_Warp", "Insane"],
+			["Hailfire_Peaks_B", "GGM_Mumbo"]
+		],
+		"Hailfire_Peaks": [
+			["Cliff_Top", "JiggyWiggySpecial"],
+			["Cliff_Top", "36_Jiggies"],
+			["Hailfire_Peaks_Early"]
+		],
+		"Ice_Wall_Room": [
+			["Nest", "Split_Up", "Snooze_Pack"],
+			["Nest", "Split_Up", "HoneyBack"],
+			["Nest", "Split_Up", "Glitches"]
+		],
+		"Cloud_Cuckooland": [
+			["Wasteland", "JiggyWiggySpecial"],
+			["Wasteland", "45_Jiggies"]
+		],
+		"Enter_Pot_O_Gold": [
+			["Cloud_Cuckooland", "CCL_Mumbo"],
+			["Cloud_Cuckooland", "Split_Up"]
+		],
+		"Open_Pot_O_Gold": [
+			["Fire_Eggs", "Grenade_Eggs", "Ice_Eggs"]
+		],
+		"Floatus_Floatium": [
+			["Cloud_Cuckooland", "Split_Up", "Hatch", "Taxi_Pack"]
+		],
+		"Event_1": [
+			["Cloud_Cuckooland", "Springy_Step_Shoes"],
+			["Cloud_Cuckooland", "Clockworks"]
+		],
+		"Event_2": [
+			["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Floatus_Floatium"],
+			["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Pack_Whack"]
+		],
+		"Event_3": [
+			["Cloud_Cuckooland", "Split_Up"],
+			["Cloud_Cuckooland", "Bee"]
+		]
 	},
 
 	"Checks": {
-		"Bovina": [["Egg_Aim"], ["MT_Flight"], ["Insane"]],
-		"Golden_Goliath": [["MT_Mumbo"], ["JSG", "Clockworks", "Egg_Aim", "Glitches"]],
-		"Ssslumber": [["JSG"]],
-		"MT_Kickball": [["Stony"]],
-		"Relic_Thingy": [["Egg_Aim", "Grip_Grab"], ["Egg_Aim", "MT_Flight"], ["MT_Flight", "Glitches"]],
-		"Top_Of_Temple": [[]],
-		"Slightly_Sacred_Chamber": [["Breegull_Blaster"]],
-		"Targitzan": [["Breegull_Blaster"]],
-		"Swamp": [["Prison_Compound", "Grip_Grab"], ["Prison_Compound", "SuperBanjo"]],
-		"Pillars": [["Prison_Compound", "Bill_Drill"], ["Prison_Compound", "Clockworks", "Egg_Aim"], ["Prison_Compound", "Tricks"]],
-		"Dilberta": [["Prison_Compound", "Bill_Drill"]],
-		"Ordnance_Storage": [["Breegull_Blaster", "Beak_Bayonet", "Break_Rocks_In_GGM"]],
-		"Crushing_Shed": [["Glitter_Gulch_Mine", "GGM_Mumbo"]],
-		"Old_King_Coal": [["Glitter_Gulch_Mine", "GGM_Mumbo"]],
-		"Generator_Cavern": [["Glitter_Gulch_Mine"]],
-		"Power_Hut": [["Break_Rocks_In_GGM"]],
-		"Waterfall_Cavern": [["Glitter_Gulch_Mine"]],
-		"Flooded_Caves": [["Glitter_Gulch_Mine"]],
-		"Canary_Mary_1": [["Free_Canary_Mary"]],
-		"Small_Waterfall": [["Glitter_Gulch_Mine", "Detonator", "Glitches"], ["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"], ["Glitter_Gulch_Mine", "Springy_Step_Shoes"]],
-		"Cactus_of_Strength": [["Witchyworld", "Bill_Drill", "Grenade_Eggs"]],
-		"Dive_of_Death": [["Witchyworld"]],
-		"Top_Of_Inferno": [["Witchyworld", "Inferno"]],
-		"Hoop_Hurry": [["Witchyworld", "Split_Up", "Explosives"]],
-		"Balloon_Burst": [["Witchyworld", "Split_Up", "Explosives", "Airborne"]],
-		"Saucer_of_Peril": [["Witchyworld", "WW_Mumbo", "Detonator", "Saucer_Button", "Explosives"]],
-		"Star_Spinner": [["Witchyworld", "WW_Mumbo"]],
-		"Dodgem_Dome": [["Witchyworld", "WW_Mumbo", "Van"]],
-		"Patch": [["Witchyworld", "Egg_Aim", "Airborne", "Grenade_Eggs"]],
-		"Boggys_Kids": [["Witchyworld", "Inferno", "Explosives", "Split_Up", "Taxi_Pack", "WW_Mumbo"], ["Witchyworld", "Inferno", "Split_Up", "Taxi_Pack", "Clockwork_Warp"]],
-		"Pawno": [["Jolly_Rogers_Lagoon"]],
-		"Chris_P_Bacon": [["Jolly_Rogers_Lagoon", "Sub", "Egg_Aim"], ["Jolly_Rogers_Lagoon", "Subaqua"]],
-		"Seemee_Fish": [["Jolly_Rogers_Lagoon", "Talon_Torpedo"]],
-		"Aliens": [["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Egg_Aim"], ["Jolly_Rogers_Lagoon", "Ice_Eggs", "Egg_Aim", "Clockworks", "Glitches"]],
-		"Merry_Maggie": [["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"], ["Jolly_Rogers_Lagoon", "Subaqua"]],
-		"Sub_Minigame": [["Jolly_Rogers_Lagoon", "Sub"]],
-		"Lord_Woo_Fak_Fak": [["Jolly_Rogers_Lagoon", "Grenade_Eggs", "Subaqua"]],
-		"Tiptup": [["Jolly_Rogers_Lagoon", "Hatch", "Explosives"], ["Jolly_Rogers_Lagoon", "Hatch", "JRL_Mumbo"]],
-		"Smugglers_Cavern": [["Jolly_Rogers_Lagoon", "Clockworks", "Egg_Aim"], ["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Glide"], ["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"]],
-		"Pig_Pool": [["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks", "Split_Up"], ["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks_B"]],
-		"Terry": [["Nest"]],
-		"Terry_Nest": [["Nest", "Explosives"], ["Nest", "Bill_Drill"]],
-		"Chompa": [["Terrydactyland", "Breegull_Blaster"]],
-		"Rocknuts_Jiggy": [["Terrydactyland", "Clockworks"]],
-		"Roar_Cage": [["Terrydactyland", "Dinosaur"], ["Terrydactyland", "Clockworks", "Egg_Aim", "Glitches"], ["Nest", "Insane"]],
-		"Oogle_Boogles": [["Terrydactyland", "Oogle_Cave_BK", "Fire_Eggs", "Bill_Drill", "Grip_Grab"]],
-		"Terrys_Kids": [["Nest", "Split_Up", "Hatch", "Taxi_Pack", "Oogle_Cave_BK"]],
-		"Stomping_Plains": [["Nest"]],
-		"Styrac_Family": [["Terrydactyland", "GGM_Mumbo", "Grip_Grab", "IoH_Mumbo", "Split_Up", "Taxi_Pack", "TDL_Mumbo", "Bill_Drill"]],
-		"Dippy": [["Cloud_Cuckooland", "Talon_Torpedo"]],
-		"Trash_Compactor": [["Inside_GI", "Split_Up", "Pack_Whack", "Tricks"], ["Inside_GI", "Split_Up", "Snooze_Pack"], ["Inside_GI", "Split_Up", "HoneyBack"]],
-		"Twinklies_Packing": [["Roof", "Battery"]],
-		"Weldar": [["Inside_GI", "Clockworks", "Egg_Aim", "Glitches"], ["Weldar_Door"]],
-		"Quality_Control": [["Roof", "Clockwork_Warp"], ["Floor_4_Crushers", "Clockworks", "Egg_Aim"], ["Floor_4_Crushers", "Explosives", "Egg_Aim", "Leg_Spring", "Glide"], ["Floor_4_Crushers", "Explosives", "Egg_Aim", "Washing_Machine"]],
-		"Clinkers_Cavern": [["Floor_4_Crushers", "Breegull_Blaster", "Claw_Clambers"], ["Floor_4_Early", "Claw_Clambers", "Grenade_Eggs"]],
-		"Attic": [["Roof", "Clockworks", "Egg_Aim"], ["Roof", "Split_Up"], ["Roof", "Insane"]],
-		"Workers_Jiggy": [["Roof", "Washing_Machine", "Bill_Drill", "Floor_2_Button"], ["Washing_Machine", "Floor_2_Button", "SuperBanjo"]],
-		"Toxic_Waste_Pool": [["Toxic_Waste", "Talon_Torpedo", "Glitches"], ["Weldar_Door", "Split_Up", "Shack_Pack"], ["Weldar_Door", "Split_Up", "Leg_Spring", "Glitches"]],
-		"Tintops": [["Inside_GI", "Claw_Clambers", "Egg_Aim", "Clockworks"], ["Floor_2", "Egg_Aim", "Clockworks"], ["Roof", "Split_Up"], ["Grunty_Industries", "Clockwork_Warp"]],
-		"Toxic_Waste_Box": [["Toxic_Waste", "Glitches"], ["Toxic_Waste", "Split_Up", "Sack_Pack"]],
-		"Ice_Wall": [["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"], ["Nest", "Ice_Wall_Room"]],
-		"HFP_Kickball": [["Hailfire_Peaks", "Stony", "Explosives"], ["Hailfire_Peaks", "Stony", "HFP_Mumbo"]],
-		"Colosseum": [["Hailfire_Peaks", "Split_Up", "Grip Grab"], ["Hailfire_Peaks", "Grip_Grab", "Glitches"], ["Hailfire_Peaks", "Insane"]],
-		"Volcano": [["Hailfire_Peaks"], ["Hailfire_Peaks_B"]],
-		"Boggys_Fish": [["Hailfire_Peaks", "Shack_Pack", "Split_Up"], ["Hailfire_Peaks", "Clockworks", "Glitches"], ["Hailfire_Peaks_B", "Shack_Pack"], ["Hailfire_Peaks", "Split_Up", "Leg_Spring", "Glitches"], ["Hailfire_Peaks", "Insane"]],
-		"Dragon_Brothers": [["Hailfire_Peaks", "Grip_Grab", "Ice_Eggs", "Fire Eggs", "Tricks"], ["Hailfire_Peaks", "Claw_Clambers", "Ice_Eggs", "Fire_Eggs"], ["Hailfire_Peaks", "Ice_Eggs", "Fire_Eggs", "Insane"]],
-		"Sabreman": [["Hailfire_Peaks", "HFP_Mumbo", "Split_Up", "Taxi_Pack"]],
-		"Alien_Kids": [["Hailfire_Peaks", "Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Egg_Aim", "Split_Up", "Hatch", "Bill_Drill", "HFP_Mumbo"]],
-		"Oil_Drill": [["Hailfire_Peaks", "Snowball", "Shack_Pack"], ["Hailfire_Peaks", "Snowball", "Toxic_Waste", "Clockworks", "Egg_Aim", "Glitches"]],
-		"Ice_Train": [["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"], ["Hailfire_Peaks", "GGM_Mumbo", "Grenade_Eggs", "Snowball"]],
-		"Pot_O_Gold": [["Cloud_Cuckooland", "Split_Up", "Open_Pot_O_Gold", "Enter_Pot_O_Gold"]],
-		"Trash_Can": [["Cloud_Cuckooland", "Split_Up"]],
-		"Mingy_Jongo": [["Cloud_Cuckooland"]],
-		"Canary_Mary_3": [["Cloud_Cuckooland", "Free_Canary_Mary"]],
-		"Eyeball_Plants": [["Cloud_Cuckooland", "Bee"]],
-		"Zubbas": [["Cloud_Cuckooland", "Bee"]],
-		"Superstash": [["Cloud_Cuckooland", "Clockworks"]],
-		"Jelly_Castle": [["Cloud_Cuckooland", "Bee", "Glitches"], ["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]],
-		"Cheese_Wedge": [["Cloud_Cuckooland", "Clockworks", "Glitches"], ["Cloud_Cuckooland", "Floatus_Floatium", "CCL_Mumbo", "Sack_Pack", "Shack_Pack"]],
-		"Mr_Fit": [["Cloud_Cuckooland", "Event_1", "Event_2", "Event_3"]]
+		"Bovina": [
+			["Egg_Aim"],
+			["MT_Flight"],
+			["Insane"]
+		],
+		"Golden_Goliath": [
+			["MT_Mumbo"],
+			["JSG", "Clockworks", "Egg_Aim", "Glitches"]
+		],
+		"Ssslumber": [
+			["JSG"]
+		],
+		"MT_Kickball": [
+			["Stony"]
+		],
+		"Relic_Thingy": [
+			["Egg_Aim", "Grip_Grab"],
+			["Egg_Aim", "MT_Flight"],
+			["MT_Flight", "Glitches"]
+		],
+		"Top_Of_Temple": [
+			[]
+		],
+		"Slightly_Sacred_Chamber": [
+			["Breegull_Blaster"]
+		],
+		"Targitzan": [
+			["Breegull_Blaster"]
+		],
+		"Swamp": [
+			["Prison_Compound", "Grip_Grab"],
+			["Prison_Compound", "SuperBanjo"]
+		],
+		"Pillars": [
+			["Prison_Compound", "Bill_Drill"],
+			["Prison_Compound", "Clockworks", "Egg_Aim"],
+			["Prison_Compound", "Tricks"]
+		],
+		"Dilberta": [
+			["Prison_Compound", "Bill_Drill"]
+		],
+		"Ordnance_Storage": [
+			["Breegull_Blaster", "Beak_Bayonet", "Break_Rocks_In_GGM"]
+		],
+		"Crushing_Shed": [
+			["Glitter_Gulch_Mine", "GGM_Mumbo"]
+		],
+		"Old_King_Coal": [
+			["Glitter_Gulch_Mine", "GGM_Mumbo"]
+		],
+		"Generator_Cavern": [
+			["Glitter_Gulch_Mine"]
+		],
+		"Power_Hut": [
+			["Break_Rocks_In_GGM"]
+		],
+		"Waterfall_Cavern": [
+			["Glitter_Gulch_Mine"]
+		],
+		"Flooded_Caves": [
+			["Glitter_Gulch_Mine"]
+		],
+		"Canary_Mary_1": [
+			["Free_Canary_Mary"]
+		],
+		"Small_Waterfall": [
+			["Glitter_Gulch_Mine", "Detonator", "Glitches"],
+			["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"],
+			["Glitter_Gulch_Mine", "Springy_Step_Shoes"]
+		],
+		"Cactus_of_Strength": [
+			["Witchyworld", "Bill_Drill", "Grenade_Eggs"]
+		],
+		"Dive_of_Death": [
+			["Witchyworld"]
+		],
+		"Top_Of_Inferno": [
+			["Witchyworld", "Inferno"]
+		],
+		"Hoop_Hurry": [
+			["Witchyworld", "Split_Up", "Explosives"]
+		],
+		"Balloon_Burst": [
+			["Witchyworld", "Split_Up", "Explosives", "Airborne"]
+		],
+		"Saucer_of_Peril": [
+			["Witchyworld", "WW_Mumbo", "Detonator", "Saucer_Button", "Explosives"]
+		],
+		"Star_Spinner": [
+			["Witchyworld", "WW_Mumbo"]
+		],
+		"Dodgem_Dome": [
+			["Witchyworld", "WW_Mumbo", "Van"]
+		],
+		"Patch": [
+			["Witchyworld", "Egg_Aim", "Airborne", "Grenade_Eggs"]
+		],
+		"Boggys_Kids": [
+			["Witchyworld", "Inferno", "Explosives", "Split_Up", "Taxi_Pack", "WW_Mumbo"],
+			["Witchyworld", "Inferno", "Split_Up", "Taxi_Pack", "Clockwork_Warp"]
+		],
+		"Pawno": [
+			["Jolly_Rogers_Lagoon"]
+		],
+		"Chris_P_Bacon": [
+			["Jolly_Rogers_Lagoon", "Sub", "Egg_Aim"],
+			["Jolly_Rogers_Lagoon", "Subaqua"]
+		],
+		"Seemee_Fish": [
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo"]
+		],
+		"Aliens": [
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Egg_Aim"],
+			["Jolly_Rogers_Lagoon", "Ice_Eggs", "Egg_Aim", "Clockworks", "Glitches"]
+		],
+		"Merry_Maggie": [
+			["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Subaqua"]
+		],
+		"Sub_Minigame": [
+			["Jolly_Rogers_Lagoon", "Sub"]
+		],
+		"Lord_Woo_Fak_Fak": [
+			["Jolly_Rogers_Lagoon", "Grenade_Eggs", "Subaqua"]
+		],
+		"Tiptup": [
+			["Jolly_Rogers_Lagoon", "Hatch", "Explosives"],
+			["Jolly_Rogers_Lagoon", "Hatch", "JRL_Mumbo"]
+		],
+		"Smugglers_Cavern": [
+			["Jolly_Rogers_Lagoon", "Clockworks", "Egg_Aim"],
+			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Glide"],
+			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"]
+		],
+		"Pig_Pool": [
+			["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks", "Split_Up"],
+			["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks_B"]
+		],
+		"Terry": [
+			["Nest"]
+		],
+		"Terry_Nest": [
+			["Nest", "Explosives"],
+			["Nest", "Bill_Drill"]
+		],
+		"Chompa": [
+			["Terrydactyland", "Breegull_Blaster"]
+		],
+		"Rocknuts_Jiggy": [
+			["Terrydactyland", "Clockworks"]
+		],
+		"Roar_Cage": [
+			["Terrydactyland", "Dinosaur"],
+			["Terrydactyland", "Clockworks", "Egg_Aim", "Glitches"],
+			["Nest", "Insane"]
+		],
+		"Oogle_Boogles": [
+			["Terrydactyland", "Oogle_Cave_BK", "Fire_Eggs", "Bill_Drill", "Grip_Grab"]
+		],
+		"Terrys_Kids": [
+			["Nest", "Split_Up", "Hatch", "Taxi_Pack", "Oogle_Cave_BK"]
+		],
+		"Stomping_Plains": [
+			["Nest"]
+		],
+		"Styrac_Family": [
+			["Terrydactyland", "GGM_Mumbo", "Grip_Grab", "IoH_Mumbo", "Split_Up", "Taxi_Pack", "TDL_Mumbo", "Bill_Drill"]
+		],
+		"Dippy": [
+			["Cloud_Cuckooland", "Talon_Torpedo"]
+		],
+		"Trash_Compactor": [
+			["Inside_GI", "Split_Up", "Pack_Whack", "Tricks"],
+			["Inside_GI", "Split_Up", "Snooze_Pack"],
+			["Inside_GI", "Split_Up", "HoneyBack"]
+		],
+		"Twinklies_Packing": [
+			["Roof", "Battery"]
+		],
+		"Weldar": [
+			["Inside_GI", "Clockworks", "Egg_Aim", "Glitches"],
+			["Weldar_Door"]
+		],
+		"Quality_Control": [
+			["Roof", "Clockwork_Warp"],
+			["Floor_4_Crushers", "Clockworks", "Egg_Aim"],
+			["Floor_4_Crushers", "Explosives", "Egg_Aim", "Leg_Spring", "Glide"],
+			["Floor_4_Crushers", "Explosives", "Egg_Aim", "Washing_Machine"]
+		],
+		"Clinkers_Cavern": [
+			["Floor_4_Crushers", "Breegull_Blaster", "Claw_Clambers"],
+			["Floor_4_Early", "Claw_Clambers", "Grenade_Eggs"]
+		],
+		"Attic": [
+			["Roof", "Clockworks", "Egg_Aim"],
+			["Roof", "Split_Up"],
+			["Roof", "Insane"]
+		],
+		"Workers_Jiggy": [
+			["Roof", "Washing_Machine", "Bill_Drill", "Floor_2_Button"],
+			["Washing_Machine", "Floor_2_Button", "SuperBanjo"]
+		],
+		"Toxic_Waste_Pool": [
+			["Toxic_Waste", "Talon_Torpedo", "Glitches"],
+			["Weldar_Door", "Split_Up", "Shack_Pack"],
+			["Weldar_Door", "Split_Up", "Leg_Spring", "Glitches"]
+		],
+		"Tintops": [
+			["Inside_GI", "Claw_Clambers", "Egg_Aim", "Clockworks"],
+			["Floor_2", "Egg_Aim", "Clockworks"],
+			["Roof", "Split_Up"],
+			["Grunty_Industries", "Clockwork_Warp"]
+		],
+		"Toxic_Waste_Box": [
+			["Toxic_Waste", "Glitches"],
+			["Toxic_Waste", "Split_Up", "Sack_Pack"]
+		],
+		"Ice_Wall": [
+			["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"],
+			["Nest", "Ice_Wall_Room"]
+		],
+		"HFP_Kickball": [
+			["Hailfire_Peaks", "Stony", "Explosives"],
+			["Hailfire_Peaks", "Stony", "HFP_Mumbo"]
+		],
+		"Colosseum": [
+			["Hailfire_Peaks", "Split_Up", "Grip Grab"],
+			["Hailfire_Peaks", "Grip_Grab", "Glitches"],
+			["Hailfire_Peaks", "Insane"]
+		],
+		"Volcano": [
+			["Hailfire_Peaks"],
+			["Hailfire_Peaks_B"]
+		],
+		"Boggys_Fish": [
+			["Hailfire_Peaks", "Shack_Pack", "Split_Up"],
+			["Hailfire_Peaks", "Clockworks", "Glitches"],
+			["Hailfire_Peaks_B", "Shack_Pack"],
+			["Hailfire_Peaks", "Split_Up", "Leg_Spring", "Glitches"],
+			["Hailfire_Peaks", "Insane"]
+		],
+		"Dragon_Brothers": [
+			["Hailfire_Peaks", "Grip_Grab", "Ice_Eggs", "Fire Eggs", "Tricks"],
+			["Hailfire_Peaks", "Claw_Clambers", "Ice_Eggs", "Fire_Eggs"],
+			["Hailfire_Peaks", "Ice_Eggs", "Fire_Eggs", "Insane"]
+		],
+		"Sabreman": [
+			["Hailfire_Peaks", "HFP_Mumbo", "Split_Up", "Taxi_Pack"]
+		],
+		"Alien_Kids": [
+			["Hailfire_Peaks", "Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Egg_Aim", "Split_Up", "Hatch", "Bill_Drill", "HFP_Mumbo"]
+		],
+		"Oil_Drill": [
+			["Hailfire_Peaks", "Snowball", "Shack_Pack"],
+			["Hailfire_Peaks", "Snowball", "Toxic_Waste", "Clockworks", "Egg_Aim", "Glitches"]
+		],
+		"Ice_Train": [
+			["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"],
+			["Hailfire_Peaks", "GGM_Mumbo", "Grenade_Eggs", "Snowball"]
+		],
+		"Pot_O_Gold": [
+			["Cloud_Cuckooland", "Split_Up", "Open_Pot_O_Gold", "Enter_Pot_O_Gold"]
+		],
+		"Trash_Can": [
+			["Cloud_Cuckooland", "Split_Up"]
+		],
+		"Mingy_Jongo": [
+			["Cloud_Cuckooland"]
+		],
+		"Canary_Mary_3": [
+			["Cloud_Cuckooland", "Free_Canary_Mary"]
+		],
+		"Eyeball_Plants": [
+			["Cloud_Cuckooland", "Bee"]
+		],
+		"Zubbas": [
+			["Cloud_Cuckooland", "Bee"]
+		],
+		"Superstash": [
+			["Cloud_Cuckooland", "Clockworks"]
+		],
+		"Jelly_Castle": [
+			["Cloud_Cuckooland", "Bee", "Glitches"],
+			["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]
+		],
+		"Cheese_Wedge": [
+			["Cloud_Cuckooland", "Clockworks", "Glitches"],
+			["Cloud_Cuckooland", "Floatus_Floatium", "CCL_Mumbo", "Sack_Pack", "Shack_Pack"]
+		],
+		"Mr_Fit": [
+			["Cloud_Cuckooland", "Event_1", "Event_2", "Event_3"]
+		]
 	},
 
 	"Items": [
@@ -237,65 +736,422 @@
 		"Dragon_Kazooie_Found"
 	],
 
+	"Cheato_Pages": {
+		"Cheato Page: MT: Snake Heads": [
+			[]
+		],
+		"Cheato Page: MT: Prison Compound": [
+			[]
+		],
+		"Cheato Page: MT: Jade Snake Grove": [
+			[]
+		],
+		"Cheato Page: GGM: Canary Mary Race": [
+			[]
+		],
+		"Cheato Page: GGM: Level Entrance": [
+			[]
+		],
+		"Cheato Page: GGM: Water Storage": [
+			[]
+		],
+		"Cheato Page: WW: Haunted Cavern": [
+			[]
+		],
+		"Cheato Page: WW: The Inferno (Van)": [
+			[]
+		],
+		"Cheato Page: WW: Saucer of Peril": [
+			[]
+		],
+		"Cheato Page: JRL: Pawno's": [
+			[]
+		],
+		"Cheato Page: JRL: Seemee": [
+			[]
+		],
+		"Cheato Page: JRL: Ancient Swimming Baths": [
+			[]
+		],
+		"Cheato Page: TDL: Dippy's Pool": [
+			[]
+		],
+		"Cheato Page: TDL: Inside the Mountain": [
+			[]
+		],
+		"Cheato Page: TDL: Boulder": [
+			[]
+		],
+		"Cheato Page: GI: Loggo": [
+			[]
+		],
+		"Cheato Page: GI: Floor 2": [
+			[]
+		],
+		"Cheato Page: GI: Repair Depot": [
+			[]
+		],
+		"Cheato Page: HFP: Lava Side": [
+			[]
+		],
+		"Cheato Page: HFP: Icicle Grotto": [
+			[]
+		],
+		"Cheato Page: HFP: Icy Side": [
+			[]
+		],
+		"Cheato Page: CCL: Canary Mary": [
+			[]
+		],
+		"Cheato Page: CCL: Pot o' Gold": [
+			[]
+		],
+		"Cheato Page: CCL: Zubbas' Nest": [
+			[]
+		],
+		"Cheato Page: Spiral Mountain": [
+			[]
+		]
+	},
+
+	"Honeycombs": {
+		"Honeycomb: MT: Entrance": [
+			[]
+		],
+		"Honeycomb: MT: Bovina": [
+			[]
+		],
+		"Honeycomb: MT: Treasure Chamber": [
+			[]
+		],
+		"Honeycomb: GGM: Boulder (Toxic Gas Cave)": [
+			[]
+		],
+		"Honeycomb: GGM: Boulder": [
+			[]
+		],
+		"Honeycomb: GGM: Train Station": [
+			[]
+		],
+		"Honeycomb: WW: Space Zone": [
+			[]
+		],
+		"Honeycomb: WW: Mumbo's Skull": [
+			[]
+		],
+		"Honeycomb: WW: Crazy Castle Area": [
+			[]
+		],
+		"Honeycomb: JRL: Seemee": [
+			[]
+		],
+		"Honeycomb: JRL: Atlantis": [
+			[]
+		],
+		"Honeycomb: JRL: Waste Pipe": [
+			[]
+		],
+		"Honeycomb: TDL: Central Area": [
+			[]
+		],
+		"Honeycomb: TDL: Styracosaurus Family Cave": [
+			[]
+		],
+		"Honeycomb: TDL: River Passage": [
+			[]
+		],
+		"Honeycomb: GI: Floor 3": [
+			[]
+		],
+		"Honeycomb: GI: Train Station": [
+			[]
+		],
+		"Honeycomb: GI: Chimney": [
+			[]
+		],
+		"Honeycomb: HFP: Inside the Volcano": [
+			[]
+		],
+		"Honeycomb: HFP: Train Station": [
+			[]
+		],
+		"Honeycomb: HFP: Lava Side": [
+			[]
+		],
+		"Honeycomb: CCL: Underground": [
+			[]
+		],
+		"Honeycomb: CCL: Trash Can": [
+			[]
+		],
+		"Honeycomb: CCL: Pot o' Gold": [
+			[]
+		],
+		"Honeycomb: IoH: Plateau": [
+			[]
+		]
+	},
+
+	"Glowbos": {
+		"Glowbo: MT: Mumbo's Skull": [
+			[]
+		],
+		"Glowbo: MT: Behind Wumba's Wigwam": [
+			[]
+		],
+		"Glowbo: GGM: Near Entrance": [
+			[]
+		],
+		"Glowbo: GGM: Mine Entrance 2": [
+			[]
+		],
+		"Glowbo: WW: The Inferno": [
+			[]
+		],
+		"Glowbo: WW: Inside Wumba's Wigwam": [
+			[]
+		],
+		"Glowbo: JRL: Pawno's Emporium": [
+			[]
+		],
+		"Glowbo: JRL: Under Wumba's Wigwam": [
+			[]
+		],
+		"Glowbo: TDL: Near Unga Bunga's Cave Entrance": [
+			[]
+		],
+		"Glowbo: TDL: Behind Mumbo's Skull": [
+			[]
+		],
+		"Glowbo: GI: Floor 2": [
+			[]
+		],
+		"Glowbo: GI: Floor 3": [
+			[]
+		],
+		"Glowbo: HFP: Lava Side": [
+			[]
+		],
+		"Glowbo: HFP: Icy Side": [
+			[]
+		],
+		"Glowbo: CCL: Overworld (Underwater)": [
+			[]
+		],
+		"Glowbo: CCL: Central Cavern (Underwater)": [
+			[]
+		],
+		"Glowbo: IoH: Cliff Top": [
+			[]
+		]
+	},
+
 	"Jinjos": {
-		"Jinjo_MT_Jade_Snake_Grove": [["JSG"]],
-		"Jinjo_MT_Kickball": [["MT_Flight"], ["Insane"]],
-		"Jinjo_MT_Temple": [["Breegull_Blaster"]],
-		"Jinjo_MT_Pool": [[]],
-		"Jinjo_MT_Bridge": [[]],
-		"Jinjo_GGM_JRL_Pipe": [["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"], ["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]],
-		"Jinjo_GGM_Jail_Cell": [["Glitter_Gulch_Mine", "Detonator"], ["Glitter_Gulch_Mine", "Clockworks", "Glitches"]],
-		"Jinjo_GGM_Toxic_Gas_Cave": [["Glitter_Gulch_Mine"]],
-		"Jinjo_GGM_Under_Boulder": [["Glitter_Gulch_Mine", "Glitches"], ["Break_Rocks_In_GGM"]],
-		"Jinjo_GGM_Minecart_Rails": [["Glitter_Gulch_Mine"]],
-		"Jinjo_WW_Big_Top": [["Witchyworld"]],
-		"Jinjo_WW_Cave_of_Horrors": [["Witchyworld", "Grenade_Eggs"]],
-		"Jinjo_WW_Area_51": [["Witchyworld", "Explosives", "Van"], ["Witchyworld", "Explosives", "Clockworks", "Glitches"]],
-		"Jinjo_WW_Dodgems_Dome": [["Witchyworld"]],
-		"Jinjo_WW_Cactus": [["Witchyworld"]],
-		"Jinjo_JRL_Alcove": [["Jolly_Rogers_Lagoon"]],
-		"Jinjo_JRL_Blubbers": [["Jolly_Rogers_Lagoon"]],
-		"Jinjo_JRL_Big_Fish": [["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"], ["Jolly_Rogers_Lagoon", "Subaqua"]],
-		"Jinjo_JRL_Seaweed_Sanctum": [["Jolly_Rogers_Lagoon"]],
-		"Jinjo_JRL_Chest": [["Jolly_Rogers_Lagoon", "Sub"], ["Jolly_Rogers_Lagoon", "Talon_Torpedo"], ["Jolly_Rogers_Lagoon", "Subaqua", "Explosives"]],
-		"Jinjo_TDL_Caged_Underwater": [["Terrydactyland", "Talon_Torpedo"], ["Terrydactyland", "Clockworks", "Egg_Aim", "Insane"], ["Nest", "Insane"]],
-		"Jinjo_TDL_Near_Entrance": [["Terrydactyland", "Egg_Aim", "Explosives"], ["Grenade_Eggs", "Egg_Aim", "Nest"], ["Nest", "Insane"]],
-		"Jinjo_TDL_Caged_Near_Unga": [["Terrydactyland", "Clockworks"], ["Nest", "Insane"]],
-		"Jinjo_TDL_Trex_Switch": [["Terrydactyland", "Egg_Aim", "Clockworks", "Glitches"], ["Terrydactyland", "TDL_Mumbo", "Dinosaur"], ["Nest", "Insane"]],
-		"Jinjo_TDL_Stomping_Plains": [["Nest", "Glitches"], ["Nest", "Split_Up"]],
-		"Jinjo_GI_Floor_5": [["Roof"], ["Floor_2", "Washing_Machine", "Trick"]],
-		"Jinjo_GI_Floor_2": [["Floor_2", "Egg_Aim", "Clockworks"], ["Floor_2", "Split_Up", "Leg_Spring"]],
-		"Jinjo_GI_JRL_Pipe": [["Toxic_Waste", "Glitches"], ["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]],
-		"Jinjo_GI_Floor_3": [["Roof", "Egg_Aim", "Clockworks"], ["Roof", "Egg_Aim", "Grenade_Eggs"], ["Roof", "Airborne", "Grenade_Eggs"]],
-		"Jinjo_GI_Outside": [["Roof", "Glitches"], ["Inside_GI", "Split_Up", "Claw_Clambers"]],
-		"Jinjo_HFP_Waterfall": [["Hailfire_Peaks", "Glitches"], ["Hailfire_Peaks", "Split_Up", "Shack_Pack"]],
-		"Jinjo_HFP_Pool": [["Hailfire_Peaks", "Clockworks", "Glitches"], ["Hailfire_Peaks", "Split_Up", "Shack_Pack"], ["Hailfire_Peaks_B", "Shack_Pack"], ["Hailfire_Peaks", "Insane"]],
-		"Jinjo_HFP_Icy_Tunnel": [["Hailfire_Peaks", "Snowball"], ["Hailfire_Peaks", "Egg_Aim", "Clockworks"]],
-		"Jinjo_HFP_Icicle_Grotto": [["Hailfire_Peaks", "Egg_Aim", "Clockworks"], ["Hailfire_Peaks", "Split_Up", "Leg_Spring"], ["Hailfire_Peaks", "Split_Up", "Wing_Whack", "Glide", "Tricks"]],
-		"Jinjo_HFP_Mildred": [["Hailfire_Peaks", "Explosives"], ["Hailfire_Peaks", "HFP_Mumbo"]],
-		"Jinjo_CCL_Trash_Can": [["Cloud_Cuckooland", "Split_Up", "Egg_Aim", "Clockworks"], ["Cloud_Cuckooland", "Split_Up", "Leg_Spring"], ["Cloud_Cuckooland", "Bee", "Glitches"], ["Cloud_Cuckooland", "Clockwork_Warp"], ["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]],
-		"Jinjo_CCL_Cheese_Wedge": [["Cloud_Cuckooland"]],
-		"Jinjo_CCL_Central_Cavern": [["Cloud_Cuckooland", "Egg_Aim", "Clockworks"], ["Cloud_Cuckooland", "Split_Up"], ["Cloud_Cuckooland", "Bee"]],
-		"Jinjo_CCL_Mingy": [["Cloud_Cuckooland"]],
-		"Jinjo_CCL_Wumbas_Wigwam": [["Cloud_Cuckooland"]],
-		"Jinjo_IOH_Wooded_Hollow": [[]],
-		"Jinjo_IOH_Wasteland": [["Wasteland"]],
-		"Jinjo_IOH_Cliff_Top": [["Cliff_Top", "Egg_Aim", "Clockworks"], ["Cliff_Top", "Claw_Clambers"]],
-		"Jinjo_IOH_Plateau": [["Bill_Drill"], ["Glitches"]],
-		"Jinjo_SM_Waterfall": [["Talon_Torpedo"]]
+		"Jinjo_MT_Jade_Snake_Grove": [
+			["JSG"]
+		],
+		"Jinjo_MT_Kickball": [
+			["MT_Flight"],
+			["Insane"]
+		],
+		"Jinjo_MT_Temple": [
+			["Breegull_Blaster"]
+		],
+		"Jinjo_MT_Pool": [
+			[]
+		],
+		"Jinjo_MT_Bridge": [
+			[]
+		],
+		"Jinjo_GGM_JRL_Pipe": [
+			["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"],
+			["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]
+		],
+		"Jinjo_GGM_Jail_Cell": [
+			["Glitter_Gulch_Mine", "Detonator"],
+			["Glitter_Gulch_Mine", "Clockworks", "Glitches"]
+		],
+		"Jinjo_GGM_Toxic_Gas_Cave": [
+			["Glitter_Gulch_Mine"]
+		],
+		"Jinjo_GGM_Under_Boulder": [
+			["Glitter_Gulch_Mine", "Glitches"],
+			["Break_Rocks_In_GGM"]
+		],
+		"Jinjo_GGM_Minecart_Rails": [
+			["Glitter_Gulch_Mine"]
+		],
+		"Jinjo_WW_Big_Top": [
+			["Witchyworld"]
+		],
+		"Jinjo_WW_Cave_of_Horrors": [
+			["Witchyworld", "Grenade_Eggs"]
+		],
+		"Jinjo_WW_Area_51": [
+			["Witchyworld", "Explosives", "Van"],
+			["Witchyworld", "Explosives", "Clockworks", "Glitches"]
+		],
+		"Jinjo_WW_Dodgems_Dome": [
+			["Witchyworld"]
+		],
+		"Jinjo_WW_Cactus": [
+			["Witchyworld"]
+		],
+		"Jinjo_JRL_Alcove": [
+			["Jolly_Rogers_Lagoon"]
+		],
+		"Jinjo_JRL_Blubbers": [
+			["Jolly_Rogers_Lagoon"]
+		],
+		"Jinjo_JRL_Big_Fish": [
+			["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Subaqua"]
+		],
+		"Jinjo_JRL_Seaweed_Sanctum": [
+			["Jolly_Rogers_Lagoon"]
+		],
+		"Jinjo_JRL_Chest": [
+			["Jolly_Rogers_Lagoon", "Sub"],
+			["Jolly_Rogers_Lagoon", "Talon_Torpedo"],
+			["Jolly_Rogers_Lagoon", "Subaqua", "Explosives"]
+		],
+		"Jinjo_TDL_Caged_Underwater": [
+			["Terrydactyland", "Talon_Torpedo"],
+			["Terrydactyland", "Clockworks", "Egg_Aim", "Insane"],
+			["Nest", "Insane"]
+		],
+		"Jinjo_TDL_Near_Entrance": [
+			["Terrydactyland", "Egg_Aim", "Explosives"],
+			["Grenade_Eggs", "Egg_Aim", "Nest"],
+			["Nest", "Insane"]
+		],
+		"Jinjo_TDL_Caged_Near_Unga": [
+			["Terrydactyland", "Clockworks"],
+			["Nest", "Insane"]
+		],
+		"Jinjo_TDL_Trex_Switch": [
+			["Terrydactyland", "Egg_Aim", "Clockworks", "Glitches"],
+			["Terrydactyland", "TDL_Mumbo", "Dinosaur"],
+			["Nest", "Insane"]
+		],
+		"Jinjo_TDL_Stomping_Plains": [
+			["Nest", "Glitches"],
+			["Nest", "Split_Up"]
+		],
+		"Jinjo_GI_Floor_5": [
+			["Roof"],
+			["Floor_2", "Washing_Machine", "Trick"]
+		],
+		"Jinjo_GI_Floor_2": [
+			["Floor_2", "Egg_Aim", "Clockworks"],
+			["Floor_2", "Split_Up", "Leg_Spring"]
+		],
+		"Jinjo_GI_JRL_Pipe": [
+			["Toxic_Waste", "Glitches"],
+			["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]
+		],
+		"Jinjo_GI_Floor_3": [
+			["Roof", "Egg_Aim", "Clockworks"],
+			["Roof", "Egg_Aim", "Grenade_Eggs"],
+			["Roof", "Airborne", "Grenade_Eggs"]
+		],
+		"Jinjo_GI_Outside": [
+			["Roof", "Glitches"],
+			["Inside_GI", "Split_Up", "Claw_Clambers"]
+		],
+		"Jinjo_HFP_Waterfall": [
+			["Hailfire_Peaks", "Glitches"],
+			["Hailfire_Peaks", "Split_Up", "Shack_Pack"]
+		],
+		"Jinjo_HFP_Pool": [
+			["Hailfire_Peaks", "Clockworks", "Glitches"],
+			["Hailfire_Peaks", "Split_Up", "Shack_Pack"],
+			["Hailfire_Peaks_B", "Shack_Pack"],
+			["Hailfire_Peaks", "Insane"]
+		],
+		"Jinjo_HFP_Icy_Tunnel": [
+			["Hailfire_Peaks", "Snowball"],
+			["Hailfire_Peaks", "Egg_Aim", "Clockworks"]
+		],
+		"Jinjo_HFP_Icicle_Grotto": [
+			["Hailfire_Peaks", "Egg_Aim", "Clockworks"],
+			["Hailfire_Peaks", "Split_Up", "Leg_Spring"],
+			["Hailfire_Peaks", "Split_Up", "Wing_Whack", "Glide", "Tricks"]
+		],
+		"Jinjo_HFP_Mildred": [
+			["Hailfire_Peaks", "Explosives"],
+			["Hailfire_Peaks", "HFP_Mumbo"]
+		],
+		"Jinjo_CCL_Trash_Can": [
+			["Cloud_Cuckooland", "Split_Up", "Egg_Aim", "Clockworks"],
+			["Cloud_Cuckooland", "Split_Up", "Leg_Spring"],
+			["Cloud_Cuckooland", "Bee", "Glitches"],
+			["Cloud_Cuckooland", "Clockwork_Warp"],
+			["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]
+		],
+		"Jinjo_CCL_Cheese_Wedge": [
+			["Cloud_Cuckooland"]
+		],
+		"Jinjo_CCL_Central_Cavern": [
+			["Cloud_Cuckooland", "Egg_Aim", "Clockworks"],
+			["Cloud_Cuckooland", "Split_Up"],
+			["Cloud_Cuckooland", "Bee"]
+		],
+		"Jinjo_CCL_Mingy": [
+			["Cloud_Cuckooland"]
+		],
+		"Jinjo_CCL_Wumbas_Wigwam": [
+			["Cloud_Cuckooland"]
+		],
+		"Jinjo_IOH_Wooded_Hollow": [
+			[]
+		],
+		"Jinjo_IOH_Wasteland": [
+			["Wasteland"]
+		],
+		"Jinjo_IOH_Cliff_Top": [
+			["Cliff_Top", "Egg_Aim", "Clockworks"],
+			["Cliff_Top", "Claw_Clambers"]
+		],
+		"Jinjo_IOH_Plateau": [
+			["Bill_Drill"],
+			["Glitches"]
+		],
+		"Jinjo_SM_Waterfall": [
+			["Talon_Torpedo"]
+		]
 	},
 
 	"Jinjo_Families_Pattern_1": {
-		"King_Jingaling": [[]],
-		"White_Jinjos": [["Jinjo_MT_Jade_Snake_Grove"]],
-		"Orange_Jinjos": [["Jinjo_MT_Bridge", "Jinjo_MT_Kickball"]],
-		"Yellow_Jinjos": [["Jinjo_GGM_Minecart_Rails", "Jinjo_GGM_Under_Boulder", "Jinjo_WW_Big_Top"]],
-		"Brown_Jinjos": [["Jinjo_WW_Dodgems_Dome", "Jinjo_WW_Cave_of_Horrors", "Jinjo_JRL_Alcove", "Jinjo_TDL_Caged_Underwater"]],
-		"Green_Jinjos": [["Jinjo_JRL_Blubbers", "Jinjo_JRL_Seaweed_Sanctum", "Jinjo_JRL_Chest", "Jinjo_WW_Area_51", "Jinjo_GGM_Toxic_Gas_Cave"]],
-		"Red_Jinjos": [["Jinjo_JRL_Big_Fish", "Jinjo_TDL_Near_Entrance", "Jinjo_TDL_Stomping_Plains", "Jinjo_GI_Floor_2", "Jinjo_GI_Floor_5", "Jinjo_CCL_Mingy"]],
-		"Blue_Jinjos": [["Jinjo_GGM_JRL_Pipe", "Jinjo_GGM_Jail_Cell", "Jinjo_WW_Cactus", "Jinjo_TDL_Caged_Near_Unga", "Jinjo_GI_JRL_Pipe", "Jinjo_HFP_Waterfall", "Jinjo_CCL_Trash_Can"]],
-		"Purple_Jinjos": [["Jinjo_MT_Pool", "Jinjo_GI_Floor_3", "Jinjo_HFP_Icicle_Grotto", "Jinjo_HFP_Mildred", "Jinjo_CCL_Cheese_Wedge", "Jinjo_CCL_Wumbas_Wigwam", "Jinjo_IOH_Wooded_Hollow", "Jinjo_SM_Waterfall"]],
-		"Black_Jinjos": [["Jinjo_MT_Temple", "Jinjo_TDL_Trex_Switch", "Jinjo_GI_Outside", "Jinjo_HFP_Pool", "Jinjo_HFP_Icy_Tunnel", "Jinjo_CCL_Central_Cavern", "Jinjo_IOH_Wasteland", "Jinjo_IOH_Cliff_Top", "Jinjo_IOH_Plateau"]]
+		"King_Jingaling": [
+			[]
+		],
+		"White_Jinjos": [
+			["Jinjo_MT_Jade_Snake_Grove"]
+		],
+		"Orange_Jinjos": [
+			["Jinjo_MT_Bridge", "Jinjo_MT_Kickball"]
+		],
+		"Yellow_Jinjos": [
+			["Jinjo_GGM_Minecart_Rails", "Jinjo_GGM_Under_Boulder", "Jinjo_WW_Big_Top"]
+		],
+		"Brown_Jinjos": [
+			["Jinjo_WW_Dodgems_Dome", "Jinjo_WW_Cave_of_Horrors", "Jinjo_JRL_Alcove", "Jinjo_TDL_Caged_Underwater"]
+		],
+		"Green_Jinjos": [
+			["Jinjo_JRL_Blubbers", "Jinjo_JRL_Seaweed_Sanctum", "Jinjo_JRL_Chest", "Jinjo_WW_Area_51", "Jinjo_GGM_Toxic_Gas_Cave"]
+		],
+		"Red_Jinjos": [
+			["Jinjo_JRL_Big_Fish", "Jinjo_TDL_Near_Entrance", "Jinjo_TDL_Stomping_Plains", "Jinjo_GI_Floor_2", "Jinjo_GI_Floor_5", "Jinjo_CCL_Mingy"]
+		],
+		"Blue_Jinjos": [
+			["Jinjo_GGM_JRL_Pipe", "Jinjo_GGM_Jail_Cell", "Jinjo_WW_Cactus", "Jinjo_TDL_Caged_Near_Unga", "Jinjo_GI_JRL_Pipe", "Jinjo_HFP_Waterfall", "Jinjo_CCL_Trash_Can"]
+		],
+		"Purple_Jinjos": [
+			["Jinjo_MT_Pool", "Jinjo_GI_Floor_3", "Jinjo_HFP_Icicle_Grotto", "Jinjo_HFP_Mildred", "Jinjo_CCL_Cheese_Wedge", "Jinjo_CCL_Wumbas_Wigwam", "Jinjo_IOH_Wooded_Hollow", "Jinjo_SM_Waterfall"]
+		],
+		"Black_Jinjos": [
+			["Jinjo_MT_Temple", "Jinjo_TDL_Trex_Switch", "Jinjo_GI_Outside", "Jinjo_HFP_Pool", "Jinjo_HFP_Icy_Tunnel", "Jinjo_CCL_Central_Cavern", "Jinjo_IOH_Wasteland", "Jinjo_IOH_Cliff_Top", "Jinjo_IOH_Plateau"]
+		]
 	}
 }
-
