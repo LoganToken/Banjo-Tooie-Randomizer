@@ -755,7 +755,7 @@
 			[]
 		],
 		"Cheato Page: GGM: Water Storage": [
-			["Glitter_Gulch_Mine", "Trick"],
+			["Glitter_Gulch_Mine", "Tricks"],
 			["Glitter_Gulch_Mine", "Grip_Grab"]
 		],
 		"Cheato Page: WW: Haunted Cavern": [
@@ -778,14 +778,14 @@
 		],
 		"Cheato Page: JRL: Ancient Swimming Baths": [
 			["Atlantis", "Talon Torpedo", "Clockworks", "Egg_Aim"],
-			["Atlantis", "Talon Torpedo", "Split_Up", "Wing_Whack", "Trick"],
+			["Atlantis", "Talon Torpedo", "Split_Up", "Wing_Whack", "Tricks"],
 			["Atlantis", "Talon Torpedo", "Split_Up", "Pack_Whack"],
 			["Atlantis", "Talon Torpedo", "Split_Up", "Leg_Spring", "Glide"]
 		],
 		"Cheato Page: TDL: Dippy's Pool": [
 			["Nest"],
 			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes"],
-			["Terrydactyland", "Split_Up", "Clockworks", "Trick"]
+			["Terrydactyland", "Split_Up", "Clockworks", "Tricks"]
 		],
 		"Cheato Page: TDL: Inside the Mountain": [
 			["Terrydactyland", "Dinosaur"],
@@ -1062,7 +1062,7 @@
 		],
 		"Jinjo_GI_Floor_5": [
 			["Roof"],
-			["Floor_2", "Washing_Machine", "Trick"]
+			["Floor_2", "Washing_Machine", "Tricks"]
 		],
 		"Jinjo_GI_Floor_2": [
 			["Floor_2", "Egg_Aim", "Clockworks"],
