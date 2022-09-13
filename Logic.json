@@ -814,22 +814,22 @@
 			["Hailfire_Peaks", "Insane"]
 		],
 		"Cheato Page: HFP: Icicle Grotto": [
-			["Clockworks"],
-			["Split_Up", "Shack_Pack"]
+			["Hailfire_Peaks", "Clockworks"],
+			["Hailfire_Peaks", "Split_Up", "Shack_Pack"]
 		],
 		"Cheato Page: HFP: Icy Side": [
-			["Tricks"],
-			["Grenades", "Egg_Aim", "Split_Up"],
-			["Grenades", "Egg_Aim", "Clockworks"]
+			["Hailfire_Peaks", "Tricks"],
+			["Hailfire_Peaks", "Grenades", "Egg_Aim", "Split_Up"],
+			["Hailfire_Peaks", "Grenades", "Egg_Aim", "Clockworks"]
 		],
 		"Cheato Page: CCL: Canary Mary": [
-			["Free_Canary_Mary"]
+			["Cloud_Cuckooland", "Free_Canary_Mary"]
 		],
 		"Cheato Page: CCL: Pot o' Gold": [
-			["Pot_O_Gold"]
+			["Cloud_Cuckooland", "Pot_O_Gold"]
 		],
 		"Cheato Page: CCL: Zubbas' Nest": [
-			["Bee"]
+			["Cloud_Cuckooland", "Bee"]
 		],
 		"Cheato Page: Spiral Mountain": [
 			[]
