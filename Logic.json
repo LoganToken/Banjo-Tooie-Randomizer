@@ -186,6 +186,9 @@
 		"Clockwork_Warp": [
 			["Grenade_Eggs", "Egg_Aim", "Clockworks", "Glitches"]
 		],
+		"Clockwork_Shot": [
+			["Egg_Aim", "Clockworks"]
+		],
 		"MT_Flight": [
 			["Bill_Drill"],
 			["MT_Mumbo"]
@@ -272,6 +275,11 @@
 			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Double_Air", "Tricks"],
 			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Subaqua"]
 		],
+		"Atlantis": [
+			["Jolly_Rogers_Lagoon", "JRL_Mumbo", "Subaqua", "Ice_Eggs"],
+			["Jolly_Rogers_Lagoon", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Subaqua", "Ice_Eggs", "Double_Air"]
+		],
 		"Wasteland": [
 			["Pine_Grove", "Talon_Torpedo"],
 			["Terrydactyland_Early"]
@@ -345,7 +353,7 @@
 			["Roof"]
 		],
 		"Weldar_Door": [
-			["Roof", "GI_Mumbo", "Washing_Machine", "Battery", "Grenade_Eggs", "Bill Drill"]
+			["Roof", "GI_Mumbo", "Washing_Machine", "Battery", "Grenade_Eggs", "Bill_Drill"]
 		],
 		"Hailfire_Peaks_B": ["Toxic_Waste", "Glitches"],
 		"Hailfire_Peaks_Early": [
