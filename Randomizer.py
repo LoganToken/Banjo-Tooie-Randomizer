@@ -4,10 +4,192 @@ import random
 with open("Logic.json", "r") as read_file:
     my_logic = json.load(read_file)
     
+with open("new_logic.json", "r") as read_file:
+    my_new_logic = json.load(read_file)
+    
+class Settings:
+    '''
+    Customizeable parameters for the randomizer
+    
+    bypass_jamjars: True if moves are awarded automatically, and do not need to be learned from Jamjars
+    tricks: Add unintended but non glitch techniques to logic
+    glitches: Add glitches to logic
+    insane: Add unreasonable tricks and glitches to logic
+    add_X_to_checks: determines whether collecting object X can award something from the reward pool
+    randomize_X: determines if X type of object is in the reward pool
+    open_silos: True turns on all IoH silos in the network
+    open_worlds: True awards the jiggywiggyspecial cheat on game start
+    '''
+    
+    def __init__(self, bypass_jamjars=True, tricks=True, glitches=True, insane=False,
+                 add_jiggies_to_checks=True, add_cheato_pages_to_checks=True, 
+                 add_honeycombs_to_checks=True, add_jinjos_to_checks=True, add_jinjo_families_to_checks=True,
+                 add_glowbos_to_checks=True, randomize_moves=True, randomize_BK_moves=False,
+                 randomize_mumbo=True, randomize_humba_wumba=True, randomize_cheats=True,
+                 open_silos=False, open_worlds=False):
+        
+        self.bypass_jamjars = bypass_jamjars
+        self.tricks = tricks
+        self.glitches = glitches
+        self.insane = insane
+        self.add_jiggies_to_checks = add_jiggies_to_checks
+        self.add_cheato_pages_to_checks = add_cheato_pages_to_checks
+        self.add_honeycombs_to_checks = add_honeycombs_to_checks
+        self.add_jinjos_to_checks = add_jinjos_to_checks
+        self.add_jinjo_families_to_checks = add_jinjo_families_to_checks
+        self.add_glowbos_to_checks = add_glowbos_to_checks
+        self.randomize_moves = randomize_moves
+        self.randomize_BK_moves = randomize_BK_moves
+        self.randomize_mumbo = randomize_mumbo
+        self.randomize_humba_wumba = randomize_humba_wumba
+        self.randomize_cheats = randomize_cheats
+        self.open_silos = open_silos
+        self.open_worlds = open_worlds
+
+class CollectionState:
+    
+    def __init__(self, logic, settings):
+        self.logic = logic
+        self.settings = settings
+        
+        self.moves = logic['Moves']
+        self.intermediates = logic['Intermediates']
+        self.items = logic['Items']
+        self.cheatos = logic['Cheato_Pages']
+        self.honeycombs = logic['Honeycombs']
+        self.glowbos = logic['Glowbos']
+        self.jinjos = logic["Jinjos"]
+        self.jinjo_families = logic["Jinjo_Families_Pattern_1"]
+        
+        #Replace commented stuff with the function
+        # self.checks = logic['Checks']
+        # self.intermediates.update(self.jinjos)
+        # self.checks.update(self.jinjo_families)
+        self.create_checks()
+        
+        self.locations = {key: None for key in self.checks.keys()}
+        self.available_checks = []
+        self.available_moves = []
+        
+        #Accessible tracks which moves, intermediates, and checks are available given the collection state
+        self.accessible = {}
+        self.create_accessible()
+        
+    def create_checks(self):
+        
+        #Gonna want to comment this line out when renamed to jiggies
+        self.checks = self.logic['Checks']
+        
+        if self.settings.add_cheato_pages_to_checks:
+            self.checks.update(self.cheatos)
+        if self.settings.add_honeycombs_to_checks:
+            self.checks.update(self.honeycombs)
+        if self.settings.add_glowbos_to_checks:
+            self.checks.update(self.glowbos)
+        if self.settings.add_jinjos_to_checks:
+            self.checks.update(self.jinjos)
+        else:
+            self.intermediates.update(self.jinjos)
+        if self.settings.add_jinjo_families_to_checks:
+            self.checks.update(self.jinjo_families)
+    
+    def create_accessible(self):
+        for move in self.moves:
+            self.accessible[move] = False
+        for intermediate in self.intermediates:
+            self.accessible[intermediate] = False
+        for check in self.checks:
+            self.accessible[check] = False
+        for item in self.items:
+            self.accessible[item] = False
+            
+        #Change silo_bypass to bypass_jamjars
+        self.accessible["Silo_Bypass"] = self.settings.bypass_jamjars
+        self.accessible["Tricks"] = self.settings.tricks
+        self.accessible["Glitches"] = self.settings.glitches
+        self.accessible["Insane"] = self.settings.insane
+        
+        if self.settings.open_silos:
+           silo_areas = ["Jinjo_Village", "Wooded_Hollow", "Plateau",
+                         "Pine_Grove", "Cliff_Top", "Wasteland", "Quagmire"]
+           for area in silo_areas:
+               self.accessible[area] = True
+        
+        if self.settings.open_worlds:
+            jws = "JiggyWiggySpecial"
+            self.accessible[jws] = True
+            if jws in self.items:
+                self.items.remove(jws)        
+    
+    def evaluate_availability_of_single_condition(self, conditions):
+        """Checks whether one possible access point of a check is met"""
+        for condition in conditions:
+            if condition not in self.accessible:
+                #print(f"Error, condition {condition} does not exist")
+                return False
+            else:
+                if self.accessible[condition] is False:
+                    return False
+        return True
+    
+    def evaluate_availability(self, conditions):
+        """Checks all possible access points of a check"""
+        for condition in conditions:
+            if self.evaluate_availability_of_single_condition(condition):
+                return True
+        return False
+    
+    def unlock_flags(self, verbose=True):
+        """Checks for new unlocks until no new unlocks found"""
+        has_new_unlock = True
+        while(has_new_unlock):
+            has_new_unlock = False
+            
+            #print("Unlocking Moves...")
+            for move in self.moves:
+                if not self.accessible[move]:
+                    if self.evaluate_availability(self.moves[move]):
+                        has_new_unlock = True
+                        self.accessible[move] = True
+                        if verbose:
+                            print(f"{move} now unlocked!")
+            
+            #print("Unlocking Intermediates...")
+            for intermediate in self.intermediates:
+                if not self.accessible[intermediate]:
+                    if self.evaluate_availability(self.intermediates[intermediate]):
+                        has_new_unlock = True
+                        self.accessible[intermediate] = True
+                        if verbose:
+                            print(f"{intermediate} now unlocked!")
+            
+            #print("Unlocking Checks...")
+            for check in self.checks:
+                #print(f"Checking {check}.")
+                if not self.accessible[check]:
+                    if self.evaluate_availability(self.checks[check]):
+                        has_new_unlock = True
+                        self.accessible[check] = True
+                        if verbose:
+                            print(f"{check} now unlocked!")
+                        #Add this check to newly available checks to fill
+                        self.available_checks.append(check)
+    
+    def place_item(self, item, location, verbose=True):
+        if verbose:
+            print(f"Placing {item} at {location}.")
+        self.locations[location] = item
+    
 class Randomizer:
     
-    def __init__(self, logic, seed=1):
+    def __init__(self, logic, seed=1, settings=Settings()):
+        self.seed = seed
+        self.logic = logic
+        self.settings = settings
+        
         random.seed(seed)
+        
+        # All this has been moved to the CollectionState class
         self.moves = logic['Moves']
         self.intermediates = logic['Intermediates']
         self.checks = logic['Checks']
@@ -24,7 +206,10 @@ class Randomizer:
         #Accessible tracks which moves, intermediates, and checks are available given the collection state
         self.accessible = {}
         self.create_accessible()
+        
+        self.collection_state = CollectionState(self.logic, self.settings)
     
+    #Not Needed with collection state
     def create_accessible(self):
         for move in self.moves:
             self.accessible[move] = False
@@ -321,7 +506,141 @@ class Randomizer:
             print(self.locations[check])
             count += 1
     
+    def fill_collection(self, verbose=True, stale_factor=1.05):
+        """
+        Upgraded from fill_staling
+        makes use of the collection state class
+
+        Parameters
+        ----------
+        verbose : TYPE, optional
+            DESCRIPTION. The default is True.
+        stale_factor : TYPE, optional
+            DESCRIPTION. The default is 1.05.
+
+        Returns
+        -------
+        None.
+
+        """
+        
+        remaining_items = self.collection_state.items.copy()
+        random.shuffle(remaining_items)
+        self.collection_state.unlock_flags(verbose=verbose)
+        
+        #Probably gonna axe this stuff
+        '''
+        early_items = ["Egg_Aim_Found", "Bill_Drill_Found", "MT_Mumbo_Found", "GGM_Mumbo_Found", 
+                       "Detonator_Found", "Stony_Found", "Grenade_Eggs_Found",
+                       "Springy_Step_Shoes_Found", "SuperBanjo_Found"]
+        midgame_items = ["WW_Mumbo_Found", "Van_Found", "JRL_Mumbo_Found", "Talon_Torpedo_Found",
+                         "Sub_Found", "Split_Up_Found", "Fire_Eggs_Found", "JiggyWiggySpecial_Found",
+                         "Grip_Grab_Found", "Airborne_Found", "Taxi_Pack_Found", "Subaqua_Found",
+                         "Ice_Eggs_Found", "Wing_Whack_Found", "Glide_Found", "Hatch_Found"]
+        midgame_limit = 9
+        limits = {
+            "Fire_Eggs_Found": 8,
+            "JiggyWiggySpecial_Found": 10,
+            "Split_Up_Found": 15,
+            "Talon_Torpedo_Found": 20,
+            "Springy_Step_Shoes_Found": 25
+            }
+        inv_limits = {v: k for k, v in limits.items()}
+        '''
+        
+        
+        weights = {loc: 0 for loc in self.collection_state.checks}
+        self.collection_state.unlock_flags(verbose=verbose)
+        random.shuffle(self.collection_state.available_checks)
+        
+        num_items_placed = 0
+        new_weight = 1
+        while len(remaining_items) > 0 and len(self.collection_state.available_checks) > 0:
+            for check in self.available_checks:
+                if weights[check] != 0:
+                    weights[check] = new_weight
+            
+            #place IoH item if is far enough along and not placed yet
+            #Ignore for now
+            '''
+            if num_items_placed in inv_limits:
+                ioh_item = inv_limits[num_items_placed]
+                if not self.accessible[ioh_item]:
+                    if verbose:
+                        print("IoH Item needed")
+                    location = self.select_from_weighted_list(self.available_checks, weights)
+                    self.available_checks.remove(location)
+                    remaining_items.remove(ioh_item)
+                    self.place_item(ioh_item, location, verbose=verbose)
+                    self.accessible[ioh_item] = True
+                    num_items_placed += 1
+                    new_weight *= stale_factor
+                    
+                    self.unlock_flags(verbose=verbose)
+                    random.shuffle(self.available_checks)
+                    continue
+            '''
+            
+            #If running out of checks, place a useful item
+            #Also ignore for now
+            '''
+            num_in_logic_checks = num_items_placed + len(self.available_checks)
+            if num_in_logic_checks >= len(self.available_checks)**2:
+                if verbose:
+                    print("Running Low on Checks")
+                useful_items = []
+                for item in early_items:
+                    if not self.accessible[item]:
+                        useful_items.append(item)
+                if num_items_placed >= midgame_limit:
+                    for item in midgame_items:
+                        if not self.accessible[item]:
+                            useful_items.append(item)
+                random.shuffle(useful_items)
+                location = self.select_from_weighted_list(self.available_checks, weights)
+                self.available_checks.remove(location)
+                useful_item = useful_items[0]
+                remaining_items.remove(useful_item)
+                self.place_item(useful_item, location, verbose=verbose)
+                self.accessible[useful_item] = True
+                num_items_placed += 1
+                new_weight *= stale_factor
+                
+                self.unlock_flags(verbose=verbose)
+                random.shuffle(self.available_checks)
+                continue
+            '''
+            
+            #old
+            '''
+            #otherwise just place random item
+            location = self.select_from_weighted_list(self.available_checks, weights)
+            self.available_checks.remove(location)
+            item = remaining_items.pop()
+            self.place_item(item, location, verbose=verbose)
+            self.accessible[item] = True
+            num_items_placed += 1
+            new_weight *= stale_factor
+            
+            self.unlock_flags(verbose=verbose)
+            random.shuffle(self.available_checks)
+            '''
+            
+            #otherwise just place random item
+            location = self.select_from_weighted_list(self.collection_state.available_checks, weights)
+            self.collection_state.available_checks.remove(location)
+            item = remaining_items.pop()
+            self.collection_state.place_item(item, location, verbose=verbose)
+            self.collection_state.accessible[item] = True
+            num_items_placed += 1
+            new_weight *= stale_factor
+            
+            self.collection_state.unlock_flags(verbose=verbose)
+            random.shuffle(self.collection_state.available_checks)
+
+SETTINGS_OPEN_WORLD = Settings(open_silos=True, open_worlds=True)                                                      
 r = Randomizer(my_logic, seed=15)
+owr = Randomizer(my_logic, seed=15, settings=SETTINGS_OPEN_WORLD)
 
 def check_fill_distribution(logic, n, algorithm="Guided"):
     checks = {key: 0 for key in logic["Checks"]}
@@ -337,46 +656,3 @@ def check_fill_distribution(logic, n, algorithm="Guided"):
             if r.locations[check] is not None:
                 checks[check] += 1
     print(checks)
-    
-class Settings:
-    '''
-    Customizeable parameters for the randomizer
-    
-    bypass_silos: True if moves are awarded automatically, and do not need to be learned from Jamjars
-    tricks: Add unintended but non glitch techniques to logic
-    glitches: Add glitches to logic
-    insane: Add unreasonable tricks and glitches to logic
-    add_X_to_checks: determines whether collecting object X can award something from the reward pool
-    randomize_X: determines if X type of object is in the reward pool
-    open_silos: True turns on all IoH silos in the network
-    open_worlds: True awards the jiggywiggyspecial cheat on game start
-    '''
-    
-    def __init__(self, bypass_silos=True, tricks=True, glitches=True, insane=False,
-                 add_jiggies_to_checks=True, add_cheato_pages_to_checks=True, 
-                 add_honeycombs_to_checks=True, add_jinjos_to_checks=True,
-                 add_glowbos_to_checks=True, randomize_moves=True, randomize_BK_moves=False,
-                 randomize_mumbo=True, randomize_humba_wumba=True, randomize_cheats=True,
-                 open_silos=False, open_worlds=False):
-        
-        self.bypass_silos = bypass_silos
-        self.tricks = tricks
-        self.glitches = glitches
-        self.insane = insane
-        self.add_jiggies_to_checks = add_jiggies_to_checks
-        self.add_cheato_pages_to_checks = add_cheato_pages_to_checks
-        self.add_honeycombs_to_checks = add_honeycombs_to_checks
-        self.add_jinjos_to_checks = add_jinjos_to_checks
-        self.add_glowbos_to_checks = add_glowbos_to_checks
-        self.randomize_moves = randomize_moves
-        self.randomize_BK_moves = randomize_BK_moves
-        self.randomize_mumbo = randomize_mumbo
-        self.randomize_humba_wumba = randomize_humba_wumba
-        self.randomize_cheats = randomize_cheats
-        self.open_silos = open_silos
-        self.open_worlds = open_worlds
-
-class CollectionState:
-    
-    def __init__(self):
-        pass
