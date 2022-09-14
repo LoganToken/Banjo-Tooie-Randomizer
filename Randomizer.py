@@ -116,10 +116,11 @@ class CollectionState:
                self.accessible[area] = True
         
         if self.settings.open_worlds:
-            jws = "JiggyWiggySpecial"
+            jws = "JiggyWiggySpecial_Found"
             self.accessible[jws] = True
             if jws in self.items:
-                self.items.remove(jws)        
+                #self.items.remove(jws) 
+                pass
     
     def evaluate_availability_of_single_condition(self, conditions):
         """Checks whether one possible access point of a check is met"""
@@ -388,6 +389,7 @@ class Randomizer:
     
     def fill_staling(self, silo_bypass=True, verbose=True, stale_factor=1.05):
         #weights new checks more heavily to counter fill being so bottom-heavy
+        #this has been wrong this whole time...
         
         self.accessible["Silo_Bypass"] = silo_bypass
         self.accessible["Glitches"] = True
@@ -420,7 +422,8 @@ class Randomizer:
         new_weight = 1
         while len(remaining_items) > 0 and len(self.available_checks) > 0:
             for check in self.available_checks:
-                if weights[check] != 0:
+                #because this line used to say !=, this whole function used to be wrong
+                if weights[check] == 0:
                     weights[check] = new_weight
             
             #place IoH item if is far enough along and not placed yet
@@ -528,6 +531,8 @@ class Randomizer:
         random.shuffle(remaining_items)
         self.collection_state.unlock_flags(verbose=verbose)
         
+        print(remaining_items)
+        
         #Probably gonna axe this stuff
         '''
         early_items = ["Egg_Aim_Found", "Bill_Drill_Found", "MT_Mumbo_Found", "GGM_Mumbo_Found", 
@@ -548,6 +553,14 @@ class Randomizer:
         inv_limits = {v: k for k, v in limits.items()}
         '''
         
+        limits = {}
+        plateau_items = ["Fire_Eggs_Found", "Split_Up_Found"]
+        random.shuffle(plateau_items)
+        limits[4] = "JiggyWiggySpecial_Found"
+        limits[9] = plateau_items[0]
+        limits[14] = plateau_items[1]
+        limits[19] = "Talon_Torpedo_Found"
+        limits[24] = "Springy_Step_Shoes_Found"
         
         weights = {loc: 0 for loc in self.collection_state.checks}
         self.collection_state.unlock_flags(verbose=verbose)
@@ -556,30 +569,29 @@ class Randomizer:
         num_items_placed = 0
         new_weight = 1
         while len(remaining_items) > 0 and len(self.collection_state.available_checks) > 0:
-            for check in self.available_checks:
-                if weights[check] != 0:
+            for check in self.collection_state.available_checks:
+                if weights[check] == 0:
                     weights[check] = new_weight
             
             #place IoH item if is far enough along and not placed yet
             #Ignore for now
-            '''
-            if num_items_placed in inv_limits:
-                ioh_item = inv_limits[num_items_placed]
-                if not self.accessible[ioh_item]:
+
+            if num_items_placed in limits:
+                ioh_item = limits[num_items_placed]
+                if not self.collection_state.accessible[ioh_item]:
                     if verbose:
                         print("IoH Item needed")
-                    location = self.select_from_weighted_list(self.available_checks, weights)
-                    self.available_checks.remove(location)
+                    location = self.select_from_weighted_list(self.collection_state.available_checks, weights)
+                    self.collection_state.available_checks.remove(location)
                     remaining_items.remove(ioh_item)
-                    self.place_item(ioh_item, location, verbose=verbose)
-                    self.accessible[ioh_item] = True
+                    self.collection_state.place_item(ioh_item, location, verbose=verbose)
+                    self.collection_state.accessible[ioh_item] = True
                     num_items_placed += 1
                     new_weight *= stale_factor
                     
-                    self.unlock_flags(verbose=verbose)
-                    random.shuffle(self.available_checks)
+                    self.collection_state.unlock_flags(verbose=verbose)
+                    random.shuffle(self.collection_state.available_checks)
                     continue
-            '''
             
             #If running out of checks, place a useful item
             #Also ignore for now
@@ -637,6 +649,21 @@ class Randomizer:
             
             self.collection_state.unlock_flags(verbose=verbose)
             random.shuffle(self.collection_state.available_checks)
+        
+        print(weights)
+            
+    def make_lua(self, file_name="Randomizer_Seed.lua"):
+        with open(file_name, "w") as lua_file:
+            lua_file.write("local seed = {\n")
+            #Write important information
+            for check in self.collection_state.locations:
+                item_found = self.collection_state.locations[check]
+                if item_found is None:
+                    item_found = "None"
+                lua_file.write(f"\t[\"{check}\"] = {{name = \"{item_found}\", set=false}},\n")
+            lua_file.write("};\n")
+            lua_file.write("\n")
+            lua_file.write("return seed;")
 
 SETTINGS_OPEN_WORLD = Settings(open_silos=True, open_worlds=True)                                                      
 r = Randomizer(my_logic, seed=15)
