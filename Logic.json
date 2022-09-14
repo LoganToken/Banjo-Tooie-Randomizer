@@ -371,6 +371,7 @@
 		"Ice_Wall_Room": [
 			["Nest", "Split_Up", "Snooze_Pack"],
 			["Nest", "Split_Up", "HoneyBack"],
+			["Nest", "Split_Up", "SuperBanjo"],
 			["Nest", "Split_Up", "Obscure", "Tricks"]
 		],
 		"Cloud_Cuckooland": [
@@ -540,8 +541,10 @@
 		],
 		"Smugglers_Cavern": [
 			["Jolly_Rogers_Lagoon", "Clockwork_Shot"],
+			["Jolly_Rogers_Lagoon", "SuperBanjo", "Split_Up", "Obscure", "Glitch"],
 			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Glide"],
-			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"]
+			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Split_Up", "Insane"]
 		],
 		"Pig_Pool": [
 			["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks", "Split_Up"],
@@ -558,7 +561,8 @@
 			["Terrydactyland", "Breegull_Blaster"]
 		],
 		"Rocknuts_Jiggy": [
-			["Terrydactyland", "Clockworks"]
+			["Terrydactyland", "Clockworks", "Obscure"],
+			["Terrydactyland", "Clockwork_Shot"]
 		],
 		"Roar_Cage": [
 			["Terrydactyland", "Dinosaur"],
@@ -689,7 +693,8 @@
 			["Cloud_Cuckooland", "Bee"]
 		],
 		"Superstash": [
-			["Cloud_Cuckooland", "Clockworks"]
+			["Cloud_Cuckooland", "Clockwork_Shot"],
+			["Cloud_Cuckooland", "Clockworks", "Grip_Grab"]
 		],
 		"Jelly_Castle": [
 			["Cloud_Cuckooland", "Bee", "Glitches"],
@@ -844,8 +849,8 @@
 		],
 		"Cheato Page: HFP: Icy Side": [
 			["Hailfire_Peaks", "Tricks"],
-			["Hailfire_Peaks", "Grenades", "Egg_Aim", "Split_Up"],
-			["Hailfire_Peaks", "Grenades", "Clockwork_Shot"]
+			["Hailfire_Peaks", "Split_Up"],
+			["Hailfire_Peaks", "Clockwork_Shot"]
 		],
 		"Cheato Page: CCL: Canary Mary": [
 			["Cloud_Cuckooland", "Free_Canary_Mary"]
