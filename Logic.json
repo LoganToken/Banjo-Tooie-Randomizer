@@ -738,7 +738,9 @@
 
 	"Cheato_Pages": {
 		"Cheato Page: MT: Snake Heads": [
-			["Relic"]
+			["Egg_Aim", "Clockworks"],
+			["Egg_Aim", "Grip_Grab"],
+			["MT_Flight"]
 		],
 		"Cheato Page: MT: Prison Compound": [
 			["Prison_Compound", "Grip_Grab"],
@@ -746,7 +748,8 @@
 		],
 		"Cheato Page: MT: Jade Snake Grove": [
 			["JSG", "Clockworks", "Egg_Aim"],
-			["JSG", "Grip_Grab"]
+			["JSG", "Grip_Grab"],
+			["JSG", "SuperBanjo"]
 		],
 		"Cheato Page: GGM: Canary Mary Race": [
 			["Free_Canary_Mary"]
@@ -765,7 +768,8 @@
 			["Witchyworld", "Split_Up", "Leg_Spring", "Wing_Whack"]
 		],
 		"Cheato Page: WW: The Inferno (Van)": [
-			["Inferno"]
+			["Inferno", "Van"],
+			["Inferno", "Clockworks", "Egg_Aim", "Glitches"]
 		],
 		"Cheato Page: WW: Saucer of Peril": [
 			["Witchyworld", "WW_Mumbo", "Detonator", "Saucer_Button", "Explosives"]
@@ -784,8 +788,7 @@
 		],
 		"Cheato Page: TDL: Dippy's Pool": [
 			["Nest"],
-			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes"],
-			["Terrydactyland", "Split_Up", "Clockworks", "Tricks"]
+			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes", "Talon_Torpedo"]
 		],
 		"Cheato Page: TDL: Inside the Mountain": [
 			["Terrydactyland", "Dinosaur"],
