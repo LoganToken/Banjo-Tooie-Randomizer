@@ -138,7 +138,7 @@
 			["TDL_Mumbo_Found", "Terrydactyland"]
 		],
 		"GI_Mumbo": [
-			["GI_Mumbo_Found", "Roof", "Grunty_Industries"]
+			["GI_Mumbo_Found", "Roof"]
 		],
 		"HFP_Mumbo": [
 			["HFP_Mumbo_Found", "Hailfire_Peaks"]
@@ -165,7 +165,7 @@
 			["Dinosaur_Found", "Terrydactyland"]
 		],
 		"Washing_Machine": [
-			["Washing_Machine_Found", "Floor_2", "Grunty_Industries"]
+			["Washing_Machine_Found", "Floor_2"]
 		],
 		"Snowball": [
 			["Snowball_Found", "Hailfire_Peaks"]
@@ -796,7 +796,8 @@
 		],
 		"Cheato Page: TDL: Dippy's Pool": [
 			["Nest"],
-			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes", "Talon_Torpedo"]
+			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes", "Talon_Torpedo"],
+			["Insane"]
 		],
 		"Cheato Page: TDL: Inside the Mountain": [
 			["Terrydactyland", "Dinosaur"],
