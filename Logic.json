@@ -138,7 +138,7 @@
 			["TDL_Mumbo_Found", "Terrydactyland"]
 		],
 		"GI_Mumbo": [
-			["GI_Mumbo_Found", "Roof", "Grunty_Industries"]
+			["GI_Mumbo_Found", "Roof"]
 		],
 		"HFP_Mumbo": [
 			["HFP_Mumbo_Found", "Hailfire_Peaks"]
@@ -165,7 +165,7 @@
 			["Dinosaur_Found", "Terrydactyland"]
 		],
 		"Washing_Machine": [
-			["Washing_Machine_Found", "Floor_2", "Grunty_Industries"]
+			["Washing_Machine_Found", "Floor_2"]
 		],
 		"Snowball": [
 			["Snowball_Found", "Hailfire_Peaks"]
@@ -184,13 +184,14 @@
 			["Clockworks"]
 		],
 		"Clockwork_Warp": [
-			["Grenade_Eggs", "Egg_Aim", "Clockworks", "Glitches"]
+			["Grenade_Eggs", "Clockwork_Shot", "Glitches"]
 		],
 		"Clockwork_Shot": [
 			["Egg_Aim", "Clockworks"]
 		],
 		"MT_Flight": [
 			["Bill_Drill"],
+			["Insane"],
 			["MT_Mumbo"]
 		],
 		"Relic": [
@@ -245,7 +246,8 @@
 			["Witchyworld_Early"]
 		],
 		"Inferno": [
-			["Clockworks", "Glitches"],
+			["Clockwork_Shot", "Glitches"],
+			["Clockworks", "Obscure", "Glitches"],
 			["Van"]
 		],
 		"Saucer_Button": [
@@ -269,7 +271,7 @@
 		"Toxic_Waste_Pipe_Button": [
 			["Jolly_Rogers_Lagoon", "Explosives"],
 			["Jolly_Rogers_Lagoon", "Bill_Drill"],
-			["Grunty_Industries", "Toxic_Waste", "Egg_Aim", "Clockworks"]
+			["Grunty_Industries", "Toxic_Waste", "Clockwork_Shot"]
 		],
 		"Swim_Through_Pipes": [
 			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Double_Air", "Tricks"],
@@ -290,23 +292,23 @@
 			["Terrydactyland_Early"]
 		],
 		"Terrydactyland_Early": [
-			["Relic", "Clockworks", "Egg_Aim", "Glitches"]
+			["Relic", "Clockwork_Shot", "Glitches"]
 		],
 		"Nest": [
 			["Terrydactyland", "Springy_Step_Shoes"],
 			["Terrydactyland", "Clockwork_Warp"],
-			["Terrydactyland", "Split_Up", "Clockworks", "Egg_Aim", "Glitches"]
+			["Terrydactyland", "Split_Up", "Clockwork_Shot", "Glitches"]
 		],
 		"Oogle_Cave_K": [
 			["Oogle_Cave_BK", "Split_Up"],
-			["Terrydactyland", "Split_Up", "SuperBanjo", "Glitches"]
+			["Terrydactyland", "Split_Up", "SuperBanjo", "Obscure", "Glitches"]
 		],
 		"Oogle_Cave_BK": [
 			["Terrydactyland", "Clockwork_Warp"],
 			["Terrydactyland", "Dinosaur", "TDL_Mumbo"],
-			["Terrydactyland", "Nest", "Glitches"],
+			["Terrydactyland", "Nest", "Obscure", "Glitches"],
 			["Oogle_Cave_K", "Witchyworld", "Claw_Clambers"],
-			["Oogle_Cave_K", "Witchyworld", "Tricks"]
+			["Oogle_Cave_K", "Witchyworld", "Obscure", "Tricks"]
 		],
 		"Quagmire": [
 			["Wasteland", "Springy_Step_Shoes"]
@@ -317,8 +319,8 @@
 		],
 		"Inside_GI": [
 			["Grunty_Industries", "GGM_Mumbo"],
-			["Grunty_Industries", "Clockwork_Warp"],
-			["Grunty_Industries", "Clockworks", "Glitches", "Egg_Aim"]
+			["Grunty_Industries", "Clockworks", "Obscure", "Glitches"],
+			["Grunty_Industries", "Clockwork_Shot", "Glitches"]
 		],
 		"Floor_4_Early": [
 			["Inside_GI", "Explosives", "Egg_Aim", "Glitches"]
@@ -326,12 +328,13 @@
 		"Floor_4_Crushers": [
 			["Roof", "GI_Mumbo", "Washing_Machine", "Bill_Drill"],
 			["Floor_4_Early"],
-			["Roof", "Split-Up", "Glitches"]
+			["Roof", "Split-Up", "Obscure", "Glitches"]
 		],
 		"Floor_2": [
 			["Inside_GI", "Claw_Clambers"],
 			["Floor_4_Early"],
-			["Grunty_Industries", "Clockworks"]
+			["Grunty_Industries", "Clockworks", "Obscure", "Glitches"],
+			["Grunty_Industries", "Clockwork_Shot", "Glitches"]
 		],
 		"Roof": [
 			["Floor_2", "Claw_Clambers"],
@@ -368,7 +371,8 @@
 		"Ice_Wall_Room": [
 			["Nest", "Split_Up", "Snooze_Pack"],
 			["Nest", "Split_Up", "HoneyBack"],
-			["Nest", "Split_Up", "Glitches"]
+			["Nest", "Split_Up", "SuperBanjo"],
+			["Nest", "Split_Up", "Obscure", "Tricks"]
 		],
 		"Cloud_Cuckooland": [
 			["Wasteland", "JiggyWiggySpecial"],
@@ -376,6 +380,7 @@
 		],
 		"Enter_Pot_O_Gold": [
 			["Cloud_Cuckooland", "CCL_Mumbo"],
+			["Cloud_Cuckooland", "SuperBanjo"],
 			["Cloud_Cuckooland", "Split_Up"]
 		],
 		"Open_Pot_O_Gold": [
@@ -384,16 +389,21 @@
 		"Floatus_Floatium": [
 			["Cloud_Cuckooland", "Split_Up", "Hatch", "Taxi_Pack"]
 		],
+		"Bean": [
+			["Cloud_Cuckooland", "CCL_Mumbo", "Bill_Drill"]
+		],
 		"Event_1": [
 			["Cloud_Cuckooland", "Springy_Step_Shoes"],
 			["Cloud_Cuckooland", "Clockworks"]
 		],
 		"Event_2": [
-			["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Floatus_Floatium"],
-			["Cloud_Cuckooland", "Sack_Pack", "CCL_Mumbo", "Pack_Whack"]
+			["Bean", "Sack_Pack", "Floatus_Floatium"],
+			["Bean", "Split_Up", "Sack_Pack", "Pack_Whack", "Tricks"]
 		],
 		"Event_3": [
 			["Cloud_Cuckooland", "Split_Up"],
+			["Cloud_Cuckooland", "Obscure", "Clockworks"],
+			["Cloud_Cuckooland", "Obscure", "Insane"],
 			["Cloud_Cuckooland", "Bee"]
 		]
 	},
@@ -406,7 +416,7 @@
 		],
 		"Golden_Goliath": [
 			["MT_Mumbo"],
-			["JSG", "Clockworks", "Egg_Aim", "Glitches"]
+			["JSG", "Clockwork_Shot", "Glitches"]
 		],
 		"Ssslumber": [
 			["JSG"]
@@ -434,7 +444,7 @@
 		],
 		"Pillars": [
 			["Prison_Compound", "Bill_Drill"],
-			["Prison_Compound", "Clockworks", "Egg_Aim"],
+			["Prison_Compound", "Clockwork_Shot"],
 			["Prison_Compound", "Tricks"]
 		],
 		"Dilberta": [
@@ -466,7 +476,7 @@
 		],
 		"Small_Waterfall": [
 			["Glitter_Gulch_Mine", "Detonator", "Glitches"],
-			["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"],
+			["Glitter_Gulch_Mine", "Clockwork_Shot"],
 			["Glitter_Gulch_Mine", "Springy_Step_Shoes"]
 		],
 		"Cactus_of_Strength": [
@@ -498,7 +508,7 @@
 		],
 		"Boggys_Kids": [
 			["Witchyworld", "Inferno", "Explosives", "Split_Up", "Taxi_Pack", "WW_Mumbo"],
-			["Witchyworld", "Inferno", "Split_Up", "Taxi_Pack", "Clockwork_Warp"]
+			["Witchyworld", "Inferno", "Split_Up", "Taxi_Pack", "Clockwork_Warp", "Obscure"]
 		],
 		"Pawno": [
 			["Jolly_Rogers_Lagoon"]
@@ -508,30 +518,33 @@
 			["Jolly_Rogers_Lagoon", "Subaqua"]
 		],
 		"Seemee_Fish": [
-			["Jolly_Rogers_Lagoon", "Talon_Torpedo"]
+			["Atlantis", "Talon_Torpedo"]
 		],
 		"Aliens": [
 			["Jolly_Rogers_Lagoon", "Talon_Torpedo", "Ice_Eggs", "Egg_Aim"],
-			["Jolly_Rogers_Lagoon", "Ice_Eggs", "Egg_Aim", "Clockworks", "Glitches"]
+			["Jolly_Rogers_Lagoon", "Ice_Eggs", "Clockwork_Shot", "Obscure", "Glitches"]
 		],
 		"Merry_Maggie": [
-			["Jolly_Rogers_Lagoon", "Egg_Aim", "Tricks"],
-			["Jolly_Rogers_Lagoon", "Subaqua"]
+			["Atlantis", "Egg_Aim", "Insane"],
+			["Atlantis", "Egg_Aim", "Grenades", "Obscure", "Tricks"],
+			["Atlantis", "Subaqua"]
 		],
 		"Sub_Minigame": [
-			["Jolly_Rogers_Lagoon", "Sub"]
+			["Atlantis", "Sub"]
 		],
 		"Lord_Woo_Fak_Fak": [
-			["Jolly_Rogers_Lagoon", "Grenade_Eggs", "Subaqua"]
+			["Atlantis", "Grenade_Eggs", "Subaqua"]
 		],
 		"Tiptup": [
 			["Jolly_Rogers_Lagoon", "Hatch", "Explosives"],
 			["Jolly_Rogers_Lagoon", "Hatch", "JRL_Mumbo"]
 		],
 		"Smugglers_Cavern": [
-			["Jolly_Rogers_Lagoon", "Clockworks", "Egg_Aim"],
+			["Jolly_Rogers_Lagoon", "Clockwork_Shot"],
+			["Jolly_Rogers_Lagoon", "SuperBanjo", "Split_Up", "Obscure", "Glitch"],
 			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Glide"],
-			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"]
+			["Jolly_Rogers_Lagoon", "Explosives", "Split_Up", "Tricks"],
+			["Jolly_Rogers_Lagoon", "Split_Up", "Insane"]
 		],
 		"Pig_Pool": [
 			["Toxic_Waste_Pipe_Button", "Cloud_Cuckooland", "Hailfire_Peaks", "Split_Up"],
@@ -548,11 +561,12 @@
 			["Terrydactyland", "Breegull_Blaster"]
 		],
 		"Rocknuts_Jiggy": [
-			["Terrydactyland", "Clockworks"]
+			["Terrydactyland", "Clockworks", "Obscure"],
+			["Terrydactyland", "Clockwork_Shot"]
 		],
 		"Roar_Cage": [
 			["Terrydactyland", "Dinosaur"],
-			["Terrydactyland", "Clockworks", "Egg_Aim", "Glitches"],
+			["Terrydactyland", "Clockwork_Shot", "Glitches"],
 			["Nest", "Insane"]
 		],
 		"Oogle_Boogles": [
@@ -576,24 +590,25 @@
 			["Inside_GI", "Split_Up", "HoneyBack"]
 		],
 		"Twinklies_Packing": [
-			["Roof", "Battery"]
+			["Roof", "Battery", "Grip_Grab"]
 		],
 		"Weldar": [
-			["Inside_GI", "Clockworks", "Egg_Aim", "Glitches"],
+			["Inside_GI", "Clockwork_Shot", "Glitches"],
 			["Weldar_Door"]
 		],
 		"Quality_Control": [
 			["Roof", "Clockwork_Warp"],
-			["Floor_4_Crushers", "Clockworks", "Egg_Aim"],
-			["Floor_4_Crushers", "Explosives", "Egg_Aim", "Leg_Spring", "Glide"],
-			["Floor_4_Crushers", "Explosives", "Egg_Aim", "Washing_Machine"]
+			["Roof", "Grenades", "Clockworks", "Insane", "Glitches"],
+			["Floor_4_Crushers", "Battery", "Clockwork_Shot"],
+			["Floor_4_Crushers", "Battery", "Explosives", "Leg_Spring", "Glide"],
+			["Floor_4_Crushers", "Battery", "Explosives", "Egg_Aim", "Washing_Machine"]
 		],
 		"Clinkers_Cavern": [
 			["Floor_4_Crushers", "Breegull_Blaster", "Claw_Clambers"],
 			["Floor_4_Early", "Claw_Clambers", "Grenade_Eggs"]
 		],
 		"Attic": [
-			["Roof", "Clockworks", "Egg_Aim"],
+			["Roof", "Clockwork_Shot"],
 			["Roof", "Split_Up"],
 			["Roof", "Insane"]
 		],
@@ -604,11 +619,11 @@
 		"Toxic_Waste_Pool": [
 			["Toxic_Waste", "Talon_Torpedo", "Glitches"],
 			["Weldar_Door", "Split_Up", "Shack_Pack"],
-			["Weldar_Door", "Split_Up", "Leg_Spring", "Glitches"]
+			["Weldar_Door", "Split_Up", "Leg_Spring", "Obscure", "Glitches"]
 		],
 		"Tintops": [
-			["Inside_GI", "Claw_Clambers", "Egg_Aim", "Clockworks"],
-			["Floor_2", "Egg_Aim", "Clockworks"],
+			["Inside_GI", "Claw_Clambers", "Clockwork_Shot"],
+			["Floor_2", "Clockwork_Shot"],
 			["Roof", "Split_Up"],
 			["Grunty_Industries", "Clockwork_Warp"]
 		],
@@ -617,7 +632,7 @@
 			["Toxic_Waste", "Split_Up", "Sack_Pack"]
 		],
 		"Ice_Wall": [
-			["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"],
+			["Hailfire_Peaks", "Clockwork_Shot", "Glitches"],
 			["Nest", "Ice_Wall_Room"]
 		],
 		"HFP_Kickball": [
@@ -653,10 +668,10 @@
 		],
 		"Oil_Drill": [
 			["Hailfire_Peaks", "Snowball", "Shack_Pack"],
-			["Hailfire_Peaks", "Snowball", "Toxic_Waste", "Clockworks", "Egg_Aim", "Glitches"]
+			["Hailfire_Peaks", "Snowball", "Toxic_Waste", "Clockwork_Shot", "Glitches"]
 		],
 		"Ice_Train": [
-			["Hailfire_Peaks", "Clockworks", "Egg_Aim", "Glitches"],
+			["Hailfire_Peaks", "Clockwork_Shot", "Glitches"],
 			["Hailfire_Peaks", "GGM_Mumbo", "Grenade_Eggs", "Snowball"]
 		],
 		"Pot_O_Gold": [
@@ -678,15 +693,17 @@
 			["Cloud_Cuckooland", "Bee"]
 		],
 		"Superstash": [
-			["Cloud_Cuckooland", "Clockworks"]
+			["Cloud_Cuckooland", "Clockwork_Shot"],
+			["Cloud_Cuckooland", "Clockworks", "Grip_Grab"]
 		],
 		"Jelly_Castle": [
 			["Cloud_Cuckooland", "Bee", "Glitches"],
 			["Cloud_Cuckooland", "Split_Up", "Shack_Pack"]
 		],
 		"Cheese_Wedge": [
-			["Cloud_Cuckooland", "Clockworks", "Glitches"],
-			["Cloud_Cuckooland", "Floatus_Floatium", "CCL_Mumbo", "Sack_Pack", "Shack_Pack"]
+			["Cloud_Cuckooland", "Clockwork_Shot", "Glitches"],
+			["Cloud_Cuckooland", "Obscure", "Glitches"],
+			["Bean", "Floatus_Floatium", "Sack_Pack", "Shack_Pack"]
 		],
 		"Mr_Fit": [
 			["Cloud_Cuckooland", "Event_1", "Event_2", "Event_3"]
@@ -746,16 +763,16 @@
 
 	"Cheato_Pages": {
 		"Cheato Page: MT: Snake Heads": [
-			["Egg_Aim", "Clockworks"],
+			["Clockwork_Shot"],
 			["Egg_Aim", "Grip_Grab"],
 			["MT_Flight"]
 		],
 		"Cheato Page: MT: Prison Compound": [
 			["Prison_Compound", "Grip_Grab"],
-			["Prison_Compound", "Clockworks", "Egg_Aim"]
+			["Prison_Compound", "Clockwork_Shot"]
 		],
 		"Cheato Page: MT: Jade Snake Grove": [
-			["JSG", "Clockworks", "Egg_Aim"],
+			["JSG", "Clockwork_Shot"],
 			["JSG", "Grip_Grab"],
 			["JSG", "SuperBanjo"]
 		],
@@ -771,13 +788,14 @@
 		],
 		"Cheato Page: WW: Haunted Cavern": [
 			["Witchyworld", "Grip_Grab"],
-			["Witchyworld", "Clockworks", "Egg_Aim"],
+			["Witchyworld", "Clockwork_Shot"],
 			["Witchyworld", "Split_Up", "Leg_Spring", "Glide"],
 			["Witchyworld", "Split_Up", "Leg_Spring", "Wing_Whack"]
 		],
 		"Cheato Page: WW: The Inferno (Van)": [
 			["Inferno", "Van"],
-			["Inferno", "Clockworks", "Egg_Aim", "Glitches"]
+			["Inferno", "Clockwork_Shot", "Glitches"],
+			["Inferno", "Clockworks", "Obscure", "Glitches"]
 		],
 		"Cheato Page: WW: Saucer of Peril": [
 			["Witchyworld", "WW_Mumbo", "Detonator", "Saucer_Button", "Explosives"]
@@ -789,14 +807,15 @@
 			["Jolly_Rogers_Lagoon", "Talon_Torpedo"]
 		],
 		"Cheato Page: JRL: Ancient Swimming Baths": [
-			["Atlantis", "Talon Torpedo", "Clockworks", "Egg_Aim"],
+			["Atlantis", "Talon Torpedo", "Clockwork_Shot"],
 			["Atlantis", "Talon Torpedo", "Split_Up", "Wing_Whack", "Tricks"],
 			["Atlantis", "Talon Torpedo", "Split_Up", "Pack_Whack"],
 			["Atlantis", "Talon Torpedo", "Split_Up", "Leg_Spring", "Glide"]
 		],
 		"Cheato Page: TDL: Dippy's Pool": [
 			["Nest"],
-			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes", "Talon_Torpedo"]
+			["Cloud_Cuckooland", "Terrydactyland", "Springy_Step_Shoes", "Talon_Torpedo"],
+			["Insane"]
 		],
 		"Cheato Page: TDL: Inside the Mountain": [
 			["Terrydactyland", "Dinosaur"],
@@ -813,7 +832,7 @@
 			["Inside_GI", "Clockworks", "Bill_Drill"]
 		],
 		"Cheato Page: GI: Floor 2": [
-			["Grunty_Industries", "Clockworks", "Egg_Aim"],
+			["Grunty_Industries", "Clockwork_Shot"],
 			["Roof"]
 		],
 		"Cheato Page: GI: Repair Depot": [
@@ -830,8 +849,8 @@
 		],
 		"Cheato Page: HFP: Icy Side": [
 			["Hailfire_Peaks", "Tricks"],
-			["Hailfire_Peaks", "Grenades", "Egg_Aim", "Split_Up"],
-			["Hailfire_Peaks", "Grenades", "Egg_Aim", "Clockworks"]
+			["Hailfire_Peaks", "Split_Up"],
+			["Hailfire_Peaks", "Clockwork_Shot"]
 		],
 		"Cheato Page: CCL: Canary Mary": [
 			["Cloud_Cuckooland", "Free_Canary_Mary"]
@@ -858,13 +877,14 @@
 		],
 		"Honeycomb: MT: Treasure Chamber": [
 			["Egg_Aim"],
-			["MT_Flight", "Glitches"]
+			["MT_Flight", "Glitches"],
+			["MT_Flight", "Obscure"]
 		],
 		"Honeycomb: GGM: Boulder (Toxic Gas Cave)": [
-			["Glitter_Gulch_Mine", "Break_Rocks_In_GGM"]
+			["Break_Rocks_In_GGM"]
 		],
 		"Honeycomb: GGM: Boulder": [
-			["Glitter_Gulch_Mine", "Break_Rocks_In_GGM"],
+			["Break_Rocks_In_GGM"],
 			["Glitter_Gulch_Mine", "Glitches"]
 		],
 		"Honeycomb: GGM: Train Station": [
@@ -888,35 +908,38 @@
 		],
 		"Honeycomb: JRL: Waste Pipe": [
 			["Jolly_Rogers_Lagoon", "Grip_Grab"],
-			["Jolly_Rogers_Lagoon", "Egg_Aim", "Clockworks", "Tricks"]
+			["Jolly_Rogers_Lagoon", "Clockwork_Shot"]
 		],
 		"Honeycomb: TDL: Central Area": [
-			["Terrydactyland"]
+			["Terrydactyland", "Tricks"],
+			["Terrydactyland", "Split_Up"],
+			["Terrydactyland", "Clockwork_Shot"]
 		],
 		"Honeycomb: TDL: Styracosaurus Family Cave": [
-			["Terrydactyland", "Egg_Aim", "Clockworks"],
+			["Terrydactyland", "Clockwork_Shot"],
 			["Terrydactyland", "Split_Up", "Bill_Drill"]
 		],
 		"Honeycomb: TDL: River Passage": [
 			["Terrydactyland"]
 		],
 		"Honeycomb: GI: Floor 3": [
-			["Grunty_Industries", "Roof", "Egg_Aim", "Clockworks"],
+			["Grunty_Industries", "Roof", "Clockwork_Shot"],
 			["Grunty_Industries", "Roof", "Grip_Grab"]
 		],
 		"Honeycomb: GI: Train Station": [
-			["Grunty_Industries", "Inside", "Tricks"],
-			["Grunty_Industries", "Inside", "Grip_Grab"]
+			["Inside_GI"]
 		],
 		"Honeycomb: GI: Chimney": [
-			["Grunty_Industries", "Roof"]
+			["Roof"]
 		],
 		"Honeycomb: HFP: Inside the Volcano": [
 			["Hailfire_Peaks"]
 		],
 		"Honeycomb: HFP: Train Station": [
 			["Hailfire_Peaks", "Grip_Grab"],
-			["Hailfire_Peaks", "Clockwork_Shot"]
+			["Hailfire_Peaks", "Clockwork_Shot"],
+			["Hailfire_Peaks", "Split_Up", "Leg_Spring", "Wing_Whack"],
+			["Hailfire_Peaks", "Split_Up", "Leg_Spring", "Glide"]
 		],
 		"Honeycomb: HFP: Lava Side": [
 			["Hailfire_Peaks"]
@@ -958,7 +981,7 @@
 			["Jolly_Rogers_Lagoon"]
 		],
 		"Glowbo: JRL: Under Wumba's Wigwam": [
-			["Jolly_Rogers_Lagoon", "Atlantis"]
+			["Atlantis"]
 		],
 		"Glowbo: TDL: Near Unga Bunga's Cave Entrance": [
 			["Terrydactyland"]
@@ -967,10 +990,10 @@
 			["Terrydactyland"]
 		],
 		"Glowbo: GI: Floor 2": [
-			["Grunty_Industries", "Floor_2"]
+			["Floor_2"]
 		],
 		"Glowbo: GI: Floor 3": [
-			["Grunty_Industries", "Roof"]
+			["Roof"]
 		],
 		"Glowbo: HFP: Lava Side": [
 			["Hailfire_Peaks"]
@@ -994,8 +1017,7 @@
 			["JSG"]
 		],
 		"Jinjo_MT_Kickball": [
-			["MT_Flight"],
-			["Insane"]
+			["MT_Flight"]
 		],
 		"Jinjo_MT_Temple": [
 			["Breegull_Blaster"]
@@ -1007,7 +1029,8 @@
 			[]
 		],
 		"Jinjo_GGM_JRL_Pipe": [
-			["Glitter_Gulch_Mine", "Clockworks", "Egg_Aim"],
+			["Glitter_Gulch_Mine", "Clockwork_Shot"],
+			["Glitter_Gulch_Mine", "Split_Up", "Leg_Spring", "Glide", "Wing_Whack", "Tricks"],
 			["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]
 		],
 		"Jinjo_GGM_Jail_Cell": [
@@ -1032,7 +1055,8 @@
 		],
 		"Jinjo_WW_Area_51": [
 			["Witchyworld", "Explosives", "Van"],
-			["Witchyworld", "Explosives", "Clockworks", "Glitches"]
+			["Witchyworld", "Explosives", "Clockworks", "Egg_Aim", "Glitches"],
+			["Witchyworld", "Explosives", "Clockworks", "Obscure", "Glitches"]
 		],
 		"Jinjo_WW_Dodgems_Dome": [
 			["Witchyworld"]
@@ -1060,7 +1084,7 @@
 		],
 		"Jinjo_TDL_Caged_Underwater": [
 			["Terrydactyland", "Talon_Torpedo"],
-			["Terrydactyland", "Clockworks", "Egg_Aim", "Insane"],
+			["Terrydactyland", "Clockwork_Shot", "Insane"],
 			["Nest", "Insane"]
 		],
 		"Jinjo_TDL_Near_Entrance": [
@@ -1073,7 +1097,7 @@
 			["Nest", "Insane"]
 		],
 		"Jinjo_TDL_Trex_Switch": [
-			["Terrydactyland", "Egg_Aim", "Clockworks", "Glitches"],
+			["Terrydactyland", "Clockwork_Shot", "Glitches"],
 			["Terrydactyland", "TDL_Mumbo", "Dinosaur"],
 			["Nest", "Insane"]
 		],
@@ -1086,7 +1110,7 @@
 			["Floor_2", "Washing_Machine", "Tricks"]
 		],
 		"Jinjo_GI_Floor_2": [
-			["Floor_2", "Egg_Aim", "Clockworks"],
+			["Floor_2", "Clockwork_Shot"],
 			["Floor_2", "Split_Up", "Leg_Spring"]
 		],
 		"Jinjo_GI_JRL_Pipe": [
@@ -1094,30 +1118,32 @@
 			["Jolly_Rogers_Lagoon", "Swim_Through_Pipes"]
 		],
 		"Jinjo_GI_Floor_3": [
-			["Roof", "Egg_Aim", "Clockworks"],
+			["Roof", "Clockwork_Shot"],
 			["Roof", "Egg_Aim", "Grenade_Eggs"],
 			["Roof", "Airborne", "Grenade_Eggs"]
 		],
 		"Jinjo_GI_Outside": [
 			["Roof", "Glitches"],
+			["Roof", "Split_Up"],
 			["Inside_GI", "Split_Up", "Claw_Clambers"]
 		],
 		"Jinjo_HFP_Waterfall": [
-			["Hailfire_Peaks", "Glitches"],
+			["Hailfire_Peaks", "Tricks"],
 			["Hailfire_Peaks", "Split_Up", "Shack_Pack"]
 		],
 		"Jinjo_HFP_Pool": [
 			["Hailfire_Peaks", "Clockworks", "Glitches"],
 			["Hailfire_Peaks", "Split_Up", "Shack_Pack"],
 			["Hailfire_Peaks_B", "Shack_Pack"],
+			["Hailfire_Peaks", "Split_Up", "Leg_Spring", "Obscure"],
 			["Hailfire_Peaks", "Insane"]
 		],
 		"Jinjo_HFP_Icy_Tunnel": [
 			["Hailfire_Peaks", "Snowball"],
-			["Hailfire_Peaks", "Egg_Aim", "Clockworks"]
+			["Hailfire_Peaks", "Clockwork_Shot"]
 		],
 		"Jinjo_HFP_Icicle_Grotto": [
-			["Hailfire_Peaks", "Egg_Aim", "Clockworks"],
+			["Hailfire_Peaks", "Clockwork_Shot"],
 			["Hailfire_Peaks", "Split_Up", "Leg_Spring"],
 			["Hailfire_Peaks", "Split_Up", "Wing_Whack", "Glide", "Tricks"]
 		],
@@ -1126,7 +1152,7 @@
 			["Hailfire_Peaks", "HFP_Mumbo"]
 		],
 		"Jinjo_CCL_Trash_Can": [
-			["Cloud_Cuckooland", "Split_Up", "Egg_Aim", "Clockworks"],
+			["Cloud_Cuckooland", "Split_Up", "Clockwork_Shot"],
 			["Cloud_Cuckooland", "Split_Up", "Leg_Spring"],
 			["Cloud_Cuckooland", "Bee", "Glitches"],
 			["Cloud_Cuckooland", "Clockwork_Warp"],
@@ -1136,7 +1162,7 @@
 			["Cloud_Cuckooland"]
 		],
 		"Jinjo_CCL_Central_Cavern": [
-			["Cloud_Cuckooland", "Egg_Aim", "Clockworks"],
+			["Cloud_Cuckooland", "Clockwork_Shot"],
 			["Cloud_Cuckooland", "Split_Up"],
 			["Cloud_Cuckooland", "Bee"]
 		],
@@ -1153,7 +1179,7 @@
 			["Wasteland"]
 		],
 		"Jinjo_IOH_Cliff_Top": [
-			["Cliff_Top", "Egg_Aim", "Clockworks"],
+			["Cliff_Top", "Clockwork_Shot"],
 			["Cliff_Top", "Claw_Clambers"]
 		],
 		"Jinjo_IOH_Plateau": [
